@@ -12,8 +12,6 @@ gem 'jbuilder', '~> 2.0'
 # App Gems
 gem 'mongoid'
 gem 'devise'
-gem 'bourbon'
-gem 'neat'
 gem 'rails_admin'
 gem 'slim'
 gem 'nokogiri'
