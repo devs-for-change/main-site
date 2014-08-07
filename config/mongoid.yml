@@ -68,4 +68,6 @@ test:
         max_retries: 1
         retry_interval: 0
 production:
-  uri: <%= ENV['MONGOHQ_URL'] %>
+  sessions:
+    default:
+      uri: <%= ENV['MONGOHQ_URL'] %>
