@@ -10,5 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//
+// Note: We CANNOT require tree because of how js files are loaded.
+//
 //= require turbolinks
-//= require_tree .
