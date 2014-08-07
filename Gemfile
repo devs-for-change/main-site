@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'rails_12factor'
+gem 'unicorn'
 
 # App Gems
 gem 'mongoid'
