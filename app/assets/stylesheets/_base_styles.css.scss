@@ -4,7 +4,42 @@ body {
   font-family: 'Raleway', sans-serif !important;
 
   .tmp-landing-container {
-    margin-top: 125px;
+    margin-top: 45px;
     text-align: center;
+
+    .image-container {
+      width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  .navbar-inverse {
+    background-color: #45c2c6;
+
+    .navbar-brand {
+      color: #efefef;
+    }
+
+    .navbar-nav > li > a {
+      color: #efefef;
+    }
+
+    .navbar-toggle {
+      border-color: #efefef;
+    }
+
+    .navbar-toggle:hover {
+      background-color: #dfdfdf;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    .tmp-landing-container {
+      .image-container {
+        width: 100%;
+      }
+    }
   }
 }
