@@ -24,11 +24,11 @@ group :doc do
 end
 
 group :test, :development do
-  gem 'debugger'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'mongoid-rspec'
+  gem 'thin'
 end
 
 group :test do
