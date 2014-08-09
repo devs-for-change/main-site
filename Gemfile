@@ -24,7 +24,6 @@ group :doc do
 end
 
 group :test, :development do
-  gem 'debugger' if RUBY_VERSION < '2.0.0'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
