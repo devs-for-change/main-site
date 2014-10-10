@@ -1,43 +1,9 @@
 doctype html
 html
   head
-    title Devs For Change
-
-    meta[name="viewport"
-         content="width=device-width, initial-scale=1"]
-
-    link[href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
-         rel="stylesheet"
-         data-turbolinks-track="true"]
-    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-
-    link[href="http://fonts.googleapis.com/css?family=Raleway:400,700,200"
-         rel="stylesheet"
-         type="text/css"]
-
-    = javascript_include_tag 'jq-loader', 'data-turbolinks-track' => true
-
-    = csrf_meta_tags
-body
-  nav.navbar.navbar-inverse.navbar-static-top role="navigation"
-    div.container
-      div.navbar-header
-        button[type="button"
-               class="navbar-toggle"
-               data-toggle="collapse"
-               data-target="#bs-example-navbar-collapse-1"]
-          span.sr-only
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        = link_to 'Devs for Change', root_path, class: 'navbar-brand'
-      div#bs-example-navbar-collapse-1.collapse.navbar-collapse
-        ul.nav.navbar-nav
-          li= link_to 'About', "/about"
-
-  .container-fluid
-    = yield
-
-  script[src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"
-         data-turbolinks-track="true"]
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = render 'layouts/head'
+  body
+    = render 'layouts/menu'
+    .container-fluid#main
+      = yield
+    = render 'layouts/scripts'
