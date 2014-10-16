@@ -4,6 +4,7 @@ class StaticPage
   PAGES = [
      { title: 'Home', slug: 'index' },
      { title: 'About', slug: 'about' },
+     { title: 'Meet the team', slug: 'meet_the_team' },
      { title: 'Blog', slug: 'blog' },
      { title: 'Work', slug: 'work' },
      { title: 'Donate', slug: 'donate' },
