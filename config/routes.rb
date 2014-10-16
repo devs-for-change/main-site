@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
+  StaticPage.slugs.each do |slug|
+    get slug.to_sym, controller: :pages
+  end
 
-  get 'about', controller: 'welcome'
-
-  root 'welcome#index'
+  root 'pages#index'
 end

@@ -30,6 +30,9 @@ group :test, :development do
   gem 'database_cleaner'
   gem 'mongoid-rspec'
   gem 'thin'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'simplecov'
 end
 
 gem "codeclimate-test-reporter", group: :test, require: nil
