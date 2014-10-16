@@ -18,8 +18,10 @@ class StaticPage
 
   class << self
     def all
-      PAGES.map do |page|
-        new(page)
+      @all ||= begin
+        PAGES.map do |page|
+          new(page)
+        end
       end
     end
 
