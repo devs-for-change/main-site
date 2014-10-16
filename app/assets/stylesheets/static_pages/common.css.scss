@@ -1,0 +1,65 @@
+$light-gray: #f2f2f2;
+$medium-gray: #ccc;
+$dark-gray: #343434;
+$logo-blue: #45c2c6;
+$button-red: #ff3333;
+
+// inheritable
+.light-gray-background {
+  background-color: $light-gray;
+}
+
+.dark-gray-background {
+  background-color: $dark-gray;
+}
+
+.medium-gray-background {
+  background-color: $medium-gray;
+}
+
+.red-background {
+  background-color: $button-red;
+}
+
+.centered {
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+// static page defaults
+.static-pages {
+  .row {
+    // Brilliant, from:  http://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3
+    [class*="col-"] {
+      padding: 0 30px;
+    }
+  }
+
+  article {
+    header {
+      h1 {
+        font-size: 20px;
+        @extend .centered;
+      }
+    }
+    p.centered {
+      .img-responsive {
+        margin: 0 auto;
+      }
+    }
+
+  }
+
+  .red-background {
+    &:hover {
+      background-color: darken($button-red, 10)
+    }
+    a.btn {
+      color: white;
+    }
+  }
+
+}
