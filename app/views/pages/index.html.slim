@@ -1,1 +1,34 @@
-h2 = title
+.row.dark-gray-background
+  .col-sm-12
+    .jumbotron
+      =image_tag 'home_hero_mobile.png',
+          class: 'img-responsive',
+          alt: "Devs for Change Making a difference one site at a time"
+
+article.row.light-gray-background
+  .col-sm-12
+    header
+      h1 About ipsum dolor sit amet
+    p.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+    p.centered Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+    p.centered
+      = link_to 'Meet the team ->', '#'
+
+article.row.process-header
+  .col-sm-12
+    header
+      h1 Process intro dolor sit amet
+    p Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+- 4.times do
+  article.row.process
+    .col-sm-12
+      header
+        p.centered = image_tag 'wireframe_no_img_80.png', class: 'img-responsive'
+        h1 Process Header
+      p.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis.
+article.row.red-background
+  .col-sm-12
+    a.btn.btn-block.btn-lg Let's work together

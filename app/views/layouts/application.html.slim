@@ -4,6 +4,6 @@ html
     = render 'layouts/head'
   body
     = render 'layouts/menu'
-    .container-fluid#main
+    .container-fluid#main[class=('static-pages' if params[:controller] == 'pages')]
       = yield
     = render 'layouts/scripts'
