@@ -34,6 +34,8 @@ group :test, :development do
   gem 'binding_of_caller'
 end
 
+gem "codeclimate-test-reporter", group: :test, require: nil
+
 group :test do
   gem 'capybara'
   gem 'capybara-webkit'

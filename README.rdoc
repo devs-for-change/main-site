@@ -1,3 +1,7 @@
+{<img src="https://codeclimate.com/github/devs-for-change/main-site/badges/gpa.svg" />}[https://codeclimate.com/github/devs-for-change/main-site]
+{<img src="https://codeclimate.com/github/devs-for-change/main-site/badges/coverage.svg" />}[https://codeclimate.com/github/devs-for-change/main-site]
+{<img src="https://travis-ci.org/devs-for-change/main-site.svg" alt="Build Status" />}[https://travis-ci.org/devs-for-change/main-site]
+
 == README
 
 This README would normally document whatever steps are necessary to get the
