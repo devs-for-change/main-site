@@ -1,19 +1,21 @@
 .static-pages {
-  .jumbotron {
-    @extend .dark-gray-background;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    .img-responsive {
-      margin: 0 auto;
+  #index {
+    .jumbotron {
+      @extend .dark-gray-background;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      .img-responsive {
+        margin: 0 auto;
+      }
     }
-  }
 
-  .process {
-    @extend .medium-gray-background;
-    padding-bottom: 30px;
-  }
-  .process-header {
-    @extend .medium-gray-background;
+    .process {
+      @extend .medium-gray-background;
+      padding-bottom: 30px;
+    }
+    .process-header {
+      @extend .medium-gray-background;
+    }
   }
 }

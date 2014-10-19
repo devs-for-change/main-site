@@ -1,1 +1,55 @@
-h2 = title
+#meet-the-team
+  .jumbotron.relative
+
+    = image_tag 'wireframe_no_img_320.png'
+    = render 'shared/down_anchor', target: '#bios'
+
+  article.row.light-gray-background#bios
+    .col-xs-12
+      .row
+        .col-xs-12
+          header
+            h1 Bios ipsum dolor sit amet
+          p Consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+      - 4.times do
+        .row
+          - 3.times do
+            .col-xs-4
+              .thumbnail
+                = image_tag 'wireframe_no_img_80.png', class: 'img-responsive'
+
+  article.row.dark-gray-background
+    .col-xs-12
+      .row
+        .col-xs-12
+          header
+            h1 Lorem ipsum mattis cras
+          p.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+          p &nbsp;
+    .col-xs-12
+      .row
+        .col-xs-12
+          #carousel.carousel.slide[data-ride='carousel']
+            ol.carousel-indicators
+              li.active[data-target='#carousel' data-slide-to=0]
+            .carousel-inner
+              .item.active
+                .centered
+                  p
+                    = image_tag 'wireframe_no_img_80.png'
+                    span.ten 10
+                  p.lead.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                  p &nbsp;
+
+  article.row
+    .col-xs-12
+      .row
+        .col-xs-12
+          header
+            h1 Where are Devs for Change?
+          p Consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+          p &nbsp;
+        .col-xs-12
+          = image_tag 'usa_map.png', class: 'img-responsive'
+
+  = render 'shared/lets_work_together'

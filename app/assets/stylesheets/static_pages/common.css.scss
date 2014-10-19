@@ -11,6 +11,7 @@ $button-red: #ff3333;
 
 .dark-gray-background {
   background-color: $dark-gray;
+  color: white;
 }
 
 .medium-gray-background {
@@ -29,12 +30,34 @@ $button-red: #ff3333;
   margin-bottom: 0;
 }
 
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.relative {
+  position: relative;
+}
+
 // static page defaults
 .static-pages {
   .row {
     // Brilliant, from:  http://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3
     [class*="col-"] {
       padding: 0 30px;
+    }
+  }
+
+  .jumbotron {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    .img-responsive {
+      margin: 0 auto;
     }
   }
 
