@@ -19,7 +19,7 @@ html
 
     = csrf_meta_tags
 body
-  nav.navbar.navbar-inverse.navbar-static-top role="navigation"
+  #main-nav.nav.navbar.navbar-inverse.navbar-static-top role="navigation"
     div.container
       div.navbar-header
         button[type="button"
@@ -41,3 +41,4 @@ body
   script[src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"
          data-turbolinks-track="true"]
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = render 'layouts/footer'
