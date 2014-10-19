@@ -1,0 +1,11 @@
+.sub-nav {
+  .sub-nav-item {
+    border: 1px solid black;
+    border-left: 0;
+    text-align: center;
+    padding: 14px;
+    &:first-child {
+      border-left: 1px solid black;
+    }
+  }
+}

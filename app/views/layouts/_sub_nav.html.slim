@@ -1,0 +1,5 @@
+.sub-nav.row
+  - if sub_nav_for_current_page?
+    - sub_nav_links.each do |link|
+      .col-xs-4.sub-nav-item
+        = link
