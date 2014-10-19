@@ -13,4 +13,5 @@ nav.navbar.navbar-inverse.navbar-static-top role="navigation"
     div#navbar-collapse.collapse.navbar-collapse
       ul.nav.navbar-nav
         - static_pages.each do |page|
-          li = link_to page.title, page.slug
+          - unless page.hide_main_nav?
+            li = link_to page.title, page.slug

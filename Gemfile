@@ -33,6 +33,8 @@ group :test, :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'simplecov'
+  gem 'pry'
+  gem 'rails-pry'
 end
 
 gem "codeclimate-test-reporter", group: :test, require: nil
