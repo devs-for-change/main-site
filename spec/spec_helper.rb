@@ -10,6 +10,7 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
 require 'capybara/rails'
+require 'pry'
 
 # Custom output class to silence Qt warnings
 # NOTE: This may cause issuse in the future so look here first if js
