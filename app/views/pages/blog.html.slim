@@ -1,1 +1,36 @@
-h2 = title
+#blog
+  .jumbotron.relative
+    = image_tag 'wireframe_no_img_320.png'
+    = render 'shared/down_anchor', target: '#blog-entries'
+
+  article.row.light-gray-background#blog-header
+    .col-xs-12
+      .row
+        .col-xs-12
+          header
+            h1 = title
+          p Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+
+  #blog-entries
+    article.row
+      .col-xs-12
+        header
+          h1.bold = link_to "Blog Headline 1"
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor...
+        .right-align
+          = link_to "Read More ...", "#", class: "btn btn-info"
+
+    article.row
+      .col-xs-12
+        header
+          h1.bold = link_to "Blog Headline 2"
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor...
+        .right-align
+          = link_to "Read More ...", "#", class: "btn btn-info"
+
+  #blog-pagination
+    section.row
+      .col-xs-6
+        = link_to "Previous", "#", class: "btn btn-default"
+      .col-xs-6
+        = link_to "Next", "#", class: "btn btn-default"
