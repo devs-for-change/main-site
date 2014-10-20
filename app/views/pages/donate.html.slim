@@ -1,1 +1,36 @@
-h2 = title
+#donate
+  .jumbotron.relative
+    = image_tag 'wireframe_no_img_320.png'
+    = render 'shared/down_anchor', target: '#bios'
+
+  article.row.light-gray-background#info
+    .col-xs-12
+      .row
+        .col-xs-12
+          header
+            h1 Donate
+            h2 Donate ipsum dolor sit amet
+          p Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+  article.row
+    .col-xs-12
+      .row
+        .col-xs-12
+          header
+            .in-circle
+              h3.circled-element 1
+          p.bold.padded Choose donation amount
+          .row.donation-options
+            .col-xs-4
+              button.btn.btn-success $5.00
+            .col-xs-4
+              button.btn.btn-success $10.00
+            .col-xs-4
+              button.btn.btn-success $15.00
+          .row.donation-options
+            .col-xs-4
+              button.btn.btn-success $20.00
+            .col-xs-4
+              button.btn.btn-success $25.00
+            .col-xs-4
+              button.btn.btn-success Other
