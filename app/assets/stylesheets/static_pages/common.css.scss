@@ -42,6 +42,10 @@ $button-red: #ff3333;
   position: relative;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 // static page defaults
 .static-pages {
   .row {
@@ -64,7 +68,15 @@ $button-red: #ff3333;
   article {
     header {
       h1 {
-        font-size: 20px;
+        font-size: 2em;
+        @extend .centered;
+      }
+      h2 {
+        font-size: 1.5em;
+        @extend .centered;
+      }
+      h3 {
+        font-size: 1.3em;
         @extend .centered;
       }
     }

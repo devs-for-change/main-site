@@ -1,0 +1,27 @@
+#donate {
+  .donation-options {
+    margin-bottom: 1.5em;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .in-circle {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    background-color: #ddd;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 1.5em;
+
+    .circled-element {
+      padding-top: .6em;
+    }
+  }
+
+  .padded {
+    padding: inherit .5em;
+  }
+}
