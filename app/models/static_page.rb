@@ -8,9 +8,9 @@ class StaticPage
      { title: 'Blog', slug: 'blog', sub_nav_pages: ['volunteer', 'contact', 'donate'] },
      { title: 'Work', slug: 'work', sub_nav_pages: ['volunteer', 'contact', 'donate'] },
      { title: 'Donate', slug: 'donate' },
-     { title: 'Contact', slug: 'contact' },
-     { title: 'Sponsor', slug: 'sponsor' },
-     { title: 'Financial Info', slug: 'financial_info' },
+     { title: 'Contact', slug: 'contact', hide_main_nav: true },
+     { title: 'Sponsor', slug: 'sponsor', hide_main_nav: true },
+     { title: 'Financial Info', slug: 'financial_info', hide_main_nav: true },
      { title: 'Volunteer', slug: 'volunteer', hide_main_nav: true },
   ]
 
