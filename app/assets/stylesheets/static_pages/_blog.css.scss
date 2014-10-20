@@ -1,0 +1,17 @@
+#blog {
+  #blog-entries {
+    article {
+      border-bottom: solid 1px #000;
+      padding-bottom: 2em;
+    }
+  }
+
+  #blog-pagination {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    a {
+      width: 100%;
+    }
+  }
+}

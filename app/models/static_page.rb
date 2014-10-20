@@ -5,7 +5,7 @@ class StaticPage
      { title: 'Home', slug: 'index' },
      { title: 'About', slug: 'about' },
      { title: 'Meet the team', slug: 'meet_the_team' },
-     { title: 'Blog', slug: 'blog' },
+     { title: 'Blog', slug: 'blog', sub_nav_pages: ['volunteer', 'contact', 'donate'] },
      { title: 'Work', slug: 'work', sub_nav_pages: ['volunteer', 'contact', 'donate'] },
      { title: 'Donate', slug: 'donate' },
      { title: 'Contact', slug: 'contact' },
