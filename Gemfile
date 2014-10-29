@@ -18,10 +18,16 @@ gem 'devise'
 gem 'rails_admin'
 gem 'slim'
 gem 'nokogiri'
+gem "mongoid-paperclip", :require => "mongoid_paperclip"
+gem 'aws-sdk', '~> 1.3.4'
 
 # Group Gems
 group :doc do
   gem 'sdoc', '~> 0.4.0'
+end
+
+group :development do
+ gem 'guard-rspec', require: false
 end
 
 group :test, :development do
@@ -35,6 +41,7 @@ group :test, :development do
   gem 'simplecov'
   gem 'pry'
   gem 'rails-pry'
+  gem 'shoulda-matchers'
 end
 
 gem "codeclimate-test-reporter", group: :test, require: nil
