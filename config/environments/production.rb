@@ -78,4 +78,19 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.paperclip_defaults =
+  {
+    storage: :fog,
+    fog_credentials: {
+      aws_access_key_id: '<your aws_access_key_id>'
+      aws_secret_access_key: '<your aws_secret_access_key>'
+      provider: 'AWS'
+      region: 'eu-west-1'
+      scheme: 'https'
+    },
+    fog_directory: 'user_profiles',
+    fog_host: ""
+  }
+
 end
