@@ -8,9 +8,9 @@ SimpleCov.start 'rails'
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
-require 'rspec/autorun'
 require 'capybara/rails'
 require 'pry'
+require 'faker'
 
 # Custom output class to silence Qt warnings
 # NOTE: This may cause issuse in the future so look here first if js
@@ -73,5 +73,7 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
-  config.include Devise::TestHelpers, type: :controller
+  config.include Devise::TestHelpers, type: [:controller, :feature]
+
+  config.include FactoryGirl::Syntax::Methods
 end

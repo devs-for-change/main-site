@@ -7,6 +7,7 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 5.0'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'rails_12factor'
@@ -15,9 +16,10 @@ gem 'unicorn'
 # App Gems
 gem 'mongoid'
 gem 'devise'
-gem 'rails_admin'
 gem 'slim'
 gem 'nokogiri'
+gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin-mongoid', github: 'elia/activeadmin-mongoid', branch: 'rails4'
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'aws-sdk', '~> 1.3.4'
 
@@ -42,6 +44,8 @@ group :test, :development do
   gem 'pry'
   gem 'rails-pry'
   gem 'shoulda-matchers'
+  gem 'faker'
+  gem 'launchy'
 end
 
 gem "codeclimate-test-reporter", group: :test, require: nil
