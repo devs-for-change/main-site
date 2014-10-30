@@ -1,9 +1,10 @@
 ActiveAdmin.register User do
-  permit_params :email, :password, :password_confirmation
+  before_filter :skip_sidebar!
+  permit_params :email, :password, :password_confirmation, *User::STRING_FIELDS
 
   index do
     selectable_column
-    id_column
+    # id_column
     column :email
     column :current_sign_in_at
     column :sign_in_count
@@ -17,12 +18,47 @@ ActiveAdmin.register User do
   filter :created_at
 
   form do |f|
-    f.inputs "Admin Details" do
+    f.inputs "User Basics" do
+      f.input :first_name
+      f.input :last_name
       f.input :email
+    end
+    f.inputs "User Personal Information" do
+      f.input :biography
+      f.input :address_line_1
+      f.input :address_line_2
+      f.input :postal_code
+      f.input :state_province
+      f.input :country
+      f.input :primary_phone
+    end
+    f.inputs "User Authentication (Leave blank if unchanged)" do
       f.input :password
       f.input :password_confirmation
     end
+
     f.actions
+  end
+
+  # These overrides are to allow devise to not require a password and confirmation.
+  controller do
+    def update
+      #binding.pry
+      if update_user
+        redirect_to resource_path(resource)
+      else
+        render action: :edit
+      end
+    end
+
+    def update_user
+      meth = changing_password? ? :update_with_password : :update_without_password
+      resource.send(meth, permitted_params[:user])
+    end
+
+    def changing_password?
+      params[:user][:password].present?
+    end
   end
 
 end

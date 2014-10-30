@@ -16,10 +16,10 @@ gem 'unicorn'
 # App Gems
 gem 'mongoid'
 gem 'devise'
-gem 'rails_admin'
 gem 'slim'
 gem 'nokogiri'
 gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin-mongoid', github: 'elia/activeadmin-mongoid', branch: 'rails4'
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'aws-sdk', '~> 1.3.4'
 
