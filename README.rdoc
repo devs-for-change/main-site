@@ -7,7 +7,7 @@
 == Running Locally
 
 * Create a user account
-  User.create(first_name: "Nic", last_name: "Boie", password: "password", password_confirmation: "password", email: "boie0025@gmail.com")
+`User.create(first_name: "Nic", last_name: "Boie", password: "password", password_confirmation: "password", email: "boie0025@gmail.com")`
 
 * Login
-  http://localhost:3000/admin
+`http://localhost:3000/admin`
