@@ -43,9 +43,8 @@ ActiveAdmin.register User do
   # These overrides are to allow devise to not require a password and confirmation.
   controller do
     def update
-      #binding.pry
       if update_user
-        redirect_to resource_path(resource)
+        redirect_to resource_path(resource), notice: "User '#{resource.email}' was successfully updated"
       else
         render action: :edit
       end
