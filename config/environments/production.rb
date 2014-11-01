@@ -83,10 +83,10 @@ Rails.application.configure do
   {
     storage: :fog,
     fog_credentials: {
-      aws_access_key_id: '<your aws_access_key_id>'
-      aws_secret_access_key: '<your aws_secret_access_key>'
-      provider: 'AWS'
-      region: 'eu-west-1'
+      aws_access_key_id: '<your aws_access_key_id>',
+      aws_secret_access_key: '<your aws_secret_access_key>',
+      provider: 'AWS',
+      region: 'eu-west-1',
       scheme: 'https'
     },
     fog_directory: 'user_profiles',
