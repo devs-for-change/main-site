@@ -16,4 +16,8 @@ module ApplicationHelper
   def sub_nav_pages_for_current_page
     page.sub_nav_pages
   end
+
+  def users
+    User.all
+  end
 end
