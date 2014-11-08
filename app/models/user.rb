@@ -9,7 +9,7 @@ class User
   }
 
   # Validate the attached image is image/jpg, image/png, etc
-  validates_attachment_content_type :profile_image, :content_type => /\Aimage\/.*\Z/
+  validates_attachment_content_type :profile_image, content_type: /\Aimage\/.*\Z/, allow_blank: :true
 
   STRING_FIELDS = %i( first_name
       last_name
@@ -43,8 +43,4 @@ class User
       'id'
     end
   end
-
-
-
-
 end
