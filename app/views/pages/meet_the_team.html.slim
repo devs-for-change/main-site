@@ -11,12 +11,11 @@
           header
             h1 Bios ipsum dolor sit amet
           p Consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-      - 4.times do
-        .row
-          - 3.times do
-            .col-xs-4
-              .thumbnail
-                = image_tag 'wireframe_no_img_80.png', class: 'img-responsive'
+      .row
+        - for user in users do
+          .col-xs-4
+            .thumbnail
+              = image_tag user.profile_image.url(:thumb), class: 'img-responsive'
 
   article.row.dark-gray-background
     .col-xs-12
