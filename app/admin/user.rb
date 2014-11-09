@@ -1,6 +1,6 @@
 ActiveAdmin.register User do
   before_filter :skip_sidebar!
-  permit_params :email, :password, :password_confirmation, *User::STRING_FIELDS
+  permit_params :email, :password, :password_confirmation, :profile_image, *User::STRING_FIELDS
 
   index do
     selectable_column
@@ -17,11 +17,12 @@ ActiveAdmin.register User do
   filter :sign_in_count
   filter :created_at
 
-  form do |f|
+  form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "User Basics" do
       f.input :first_name
       f.input :last_name
       f.input :email
+      f.input :profile_image, as: :file, hint: f.template.image_tag(f.object.profile_image.url(:square))
     end
     f.inputs "User Personal Information" do
       f.input :biography
