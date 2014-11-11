@@ -5,3 +5,4 @@
 /tmp
 /coverage
 user_profiles
+/public/users/*

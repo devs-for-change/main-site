@@ -41,7 +41,8 @@ Rails.application.configure do
       provider: "Local",
       local_root: "#{Rails.root}/public"
     },
-    fog_directory: 'user_profiles',
-    fog_host: "localhost"
+
+    fog_directory: '',
+    fog_host: "http://localhost:3000"
   }
 end
