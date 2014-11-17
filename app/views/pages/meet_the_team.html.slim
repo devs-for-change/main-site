@@ -13,9 +13,9 @@
           p Consectetur adipiscing elit. Aenean euismod bibendum laoreet.
       .row
         - for user in users do
-          .col-xs-4
+          .col-xs-6.col-sm-4
             .thumbnail
-              = image_tag user.profile_image.url(:medium), class: 'img-responsive'
+              = image_tag user.profile_image.url(:medium), class: 'img-responsive img-rounded'
 
   article.row.dark-gray-background
     .col-xs-12
@@ -30,15 +30,30 @@
         .col-xs-12
           #carousel.carousel.slide[data-ride='carousel']
             ol.carousel-indicators
-              li.active[data-target='#carousel' data-slide-to=0]
-            .carousel-inner
-              .item.active
-                .centered
-                  p
-                    = image_tag 'wireframe_no_img_80.png'
-                    span.ten 10
-                  p.lead.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                  p &nbsp;
+              - 10.times do |index|
+                - if index == 0
+                  li.active[data-target='#carousel' data-slide-to=index.to_i]
+                - else
+                  li[data-target='#carousel' data-slide-to=index.to_i]
+
+            .carousel-inner[role='listbox']
+              - 10.times do |index|
+                - if index == 0
+                  .item.active
+                    .centered
+                      p
+                        = image_tag 'wireframe_no_img_80.png'
+                        span.ten 10
+                      p.lead.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                      p &nbsp;
+                - else
+                  .item
+                    .centered
+                      p
+                        = image_tag 'wireframe_no_img_80.png'
+                        span.ten 10
+                      p.lead.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                      p &nbsp;
 
   article.row
     .col-xs-12
