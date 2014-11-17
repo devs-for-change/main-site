@@ -91,6 +91,39 @@ $default-button-background-hover-color: #3fabac;
     }
   }
 
+  .jumbotron {
+    color: rgb(201, 201, 201);
+    background: transparent;
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+    .img-responsive {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .jumbotron {
+      background: transparent asset_url('wireframe_no_img_320.png') no-repeat center top;
+      height: 200px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .jumbotron {
+      background: transparent asset_url('home_hero_tablet.png') no-repeat center top;
+      height: 673px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .jumbotron {
+      background: transparent asset_url('home_hero_desktop.png') no-repeat center top;
+      height: 673px;
+    }
+  }
+
+
   article {
     padding-top: 80px;
     padding-bottom: 80px;
