@@ -1,5 +1,8 @@
 .static-pages {
   #index {
+    .no-overflow {
+      overflow: hidden;
+    }
     .jumbotron {
       @extend .dark-gray-background;
       padding: 0;
