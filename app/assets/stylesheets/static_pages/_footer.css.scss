@@ -1,0 +1,18 @@
+footer.site-footer {
+  @extend .hidden-xs;
+  margin: 0 auto;
+  max-width: 1200px;
+  &>div {
+    vertical-align: middle;
+    a {
+      color: $dark-blue;
+      &:hover, &:focus {
+        color: $logo-blue !important;
+      }
+    }
+  }
+  img.social-icon {
+    max-height: 30%;
+    max-width: 30%;
+  }
+}

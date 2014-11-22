@@ -1,0 +1,21 @@
+.navbar {
+  height: 125px;
+  img {
+    max-height: 100px;
+  }
+}
+.navbar-nav > li > a {
+  @media (min-width: $screen-sm-min) {
+    margin-top: 35px;
+  }
+  font-size: 1.5em !important;
+  text-transform: uppercase;
+  color: $dark-blue;
+  &:hover, &:focus {
+    color: $logo-blue !important;
+    text-decoration: underline;
+  }
+  &:active, &.active {
+    color: $logo-blue !important;
+  }
+}

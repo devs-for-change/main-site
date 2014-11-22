@@ -29,5 +29,19 @@ describe ApplicationHelper do
         expect(helper.sub_nav_pages_for_current_page).to include StaticPage.find('index')
       end
     end
+
+    describe '#nav_class_for' do
+      let(:page) { StaticPage.new(sub_nav_pages: ['index']) }
+
+      it 'returns active if the current page is active' do
+        allow(helper).to receive(:page).and_return page
+        expect(helper.nav_class_for(page)).to eq('active')
+      end
+
+      it 'retuns an empty string the current page is not active' do
+        expect(helper.nav_class_for(page)).to eq('')
+      end
+
+    end
   end
 end

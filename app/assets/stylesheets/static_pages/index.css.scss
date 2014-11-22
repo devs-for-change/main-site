@@ -1,24 +1,50 @@
 .static-pages {
   #index {
-    .no-overflow {
+
+    .hero-background {
+      background: image-url("home-page-hero-01.jpg") no-repeat center fixed;
+      margin: 0 auto;
       overflow: hidden;
-    }
-    .jumbotron {
-      @extend .dark-gray-background;
+      max-width: none;
       padding: 0;
-      margin: 0;
-      text-align: center;
-      .img-responsive {
-        margin: 0 auto;
-      }
+      height: calc(100vh - 126px)
     }
 
-    .process {
-      @extend .medium-gray-background;
-      padding-bottom: 30px;
+    .hero {
+      .hero-content {
+        h1 {
+          padding-top: 30vh;
+          @media (max-width: $screen-md-min) {
+            padding-top: 10vh;
+            padding-right: 10px;
+          }
+          font-family: 'Lato', sans-serif;
+          color: $logo-blue;
+          max-width: 1200px;
+          margin: 0 auto;
+          font-size: 6.25em;
+          font-weight: 700;
+
+        }
+      }
+      height: calc(100vh - 126px);
+      text-transform: uppercase;
+      max-width: none;
+      background-color:$dark-gray;
+      overflow: hidden;
+      filter:alpha(opacity=60);
+      opacity:.6;
+      padding: 0;
+      text-align: center;
+      z-index: -1000;
     }
+
     .process-header {
       @extend .medium-gray-background;
     }
+    .process-icons {
+      font-size: .8em;
+    }
+
   }
 }

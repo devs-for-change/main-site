@@ -1,59 +1,57 @@
 #index
   article.dark-gray-background
-    .row.no-overflow
-      .col-sm-12
-        .jumbotron
-          =image_tag 'home-page-hero-01.jpg',
-              class: 'img-responsive',
-              alt: "Devs for Change Making a difference one site at a time"
+    .row.hero-background
+      .col-sm-12.no-padding.vcenter
+        .row.hero
+          .col-xs-12
+            .hero-content
+              h1.vcenter
+                | Making a difference
+                br
+                | one website at a time
     = render 'shared/down_anchor', target: '#about'
 
-  article.light-gray-background#about
+  article.textured-background#about
+    .row-spacer
     .row
       .col-sm-12
         header
-          h1 About ipsum dolor sit amet
-        p.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          h1 About Us
+        p. We are a collective of trusted industry professionals donating our time to make your mission come to life online like never before. We will listen to your mission and guide you to a final product you can actually use—and be proud of. Basically, we run like a modern digital agency, except without the final bill.
 
-        p.centered Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-        p.centered
-          = link_to 'Meet the team ->', '#'
+    .row-spacer
   article
+    .row-spacer
     .row
       .col-xs-12
-        article.no-full-height
+        article.process
           .row
             .col-sm-12
               header
-                h1 Process intro dolor sit amet
-              p Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-          .row.no-full-height
-            .col-sm-12.col-md-6
+                h1 How We Work With You
+              p Devs for Change offers everything from full lifecycle development to a la carte design solutions. If you’re a nonprofit interested in learning more, feel free to drop us a line.
+          .row.process-icons
+            .col-xs-12.col-md-4.col-md-offset-2
               header
                 p.centered = image_tag 'process-colaborate-icon.png', class: 'img-responsive'
-                h2 Process Header
-              p.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis.
-
-            .col-sm-12.col-md-6
+                h2 Collaborate
+              p.centered You will partner in a detailed vision of your site’s pages before we develop anything—including the best-practice user experience- tailored to your audience.
+            .col-xs-12.col-md-4
               header
                 p.centered = image_tag 'process-design-icon.png', class: 'img-responsive'
-                h2 Process Header
-              p.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis.
-
-          .row.no-full-height
-            .col-sm-12.col-md-6
+                h2 Design
+              p.centered With our plan mutually agreed upon, we’ll start actually creating your site—and share with you for your approval along the way, of course.
+          .row.process-icons
+            .col-xs-12.col-md-4.col-md-offset-2
               header
                 p.centered = image_tag 'process-build-icon.png', class: 'img-responsive'
-                h2 Process Header
-              p.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis.
-
-            .col-sm-12.col-md-6
+                h2 Develop
+              p.centered We demystify development by working with directly with your nonproft team to design and development system based on your specific needs using our Ruby on Rails platform.
+            .col-xs-12.col-md-4
               header
                 p.centered = image_tag 'process-launch-icon.png', class: 'img-responsive'
-                h2 Process Header
-              p.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis.
+                h2 Inspire
+              p.centered Inspire giving through an improved user experience.
+  .row-spacer
 
-  
   = render 'shared/lets_work_together'
