@@ -8,7 +8,7 @@ article .row   {
   height: 100vh;
 }
 
-article.no-full-height > .row{
+article.no-full-height > .row, .no-full-height{
   height: auto !important;
 }
 
