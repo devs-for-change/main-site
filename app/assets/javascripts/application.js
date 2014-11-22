@@ -14,3 +14,4 @@
 // Note: We CANNOT require tree because of how js files are loaded.
 //
 //= require turbolinks
+//= require smooth-scroll
