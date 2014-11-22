@@ -1,5 +1,24 @@
+body {
+  overflow-x: hidden; // Fix 0 padding container fluid.
+}
+.container-fluid {
+  padding: 0;
+}
 // not much should go in this file.
-article .row, .sub-nav   {
+article .row   {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  xxxwidth: 100vw;
+}
+
+article:first-child {
+
+    margin-bottom: -50px; // Subtract navbar height
+  
+}
+
+.sub-nav {
   max-width: 1200px;
   margin: 0 auto;
 }

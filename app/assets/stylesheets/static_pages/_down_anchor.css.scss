@@ -1,7 +1,7 @@
 .static-pages {
   .down-anchor {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;;
 
     // These are for centering.  From http://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element
     margin-left: auto;
@@ -13,8 +13,7 @@
     background: image_url('down_anchor_circle.png');
     width: 60px;
     height: 30px;
-    margin-top: 10px;
-    padding-top: 10px;
+    
     a, a:hover {
       color: black;
       text-decoration: none;
