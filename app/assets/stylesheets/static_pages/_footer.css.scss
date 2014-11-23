@@ -1,10 +1,14 @@
 footer.site-footer {
   @extend .hidden-xs;
+  height: 215px;
   margin: 0 auto;
   max-width: 1200px;
+  padding-top: 50px !important;
   &>div {
+    font-size: 1.333em !important;
     vertical-align: middle;
     a {
+
       color: $dark-blue;
       &:hover, &:focus {
         color: $logo-blue !important;
@@ -12,7 +16,7 @@ footer.site-footer {
     }
   }
   img.social-icon {
-    max-height: 30%;
-    max-width: 30%;
+    max-height: 20%;
+    max-width: 20%;
   }
 }
