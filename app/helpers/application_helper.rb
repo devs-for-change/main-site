@@ -20,4 +20,8 @@ module ApplicationHelper
   def users
     User.all
   end
+
+  def nav_class_for(nav_page)
+    page == nav_page ? 'active' : ''
+  end
 end

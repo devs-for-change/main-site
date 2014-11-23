@@ -1,0 +1,27 @@
+// Type/font for DFC Home site
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+body {
+  font-size: 12px; //base
+  font-family: 'Lato', sans-serif;
+  article {
+    h1 {
+     font-family: 'Pacifico', sans-serif;
+     font-size: 3.3em;
+     color: #f99926;
+    }
+    h2 {
+     font-weight: 700;
+     font-size: 2.125em;
+     color: $logo-blue;
+     text-transform: uppercase;
+    }
+    p {
+      font-family: 'Roboto Slab', serif;
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+
+}

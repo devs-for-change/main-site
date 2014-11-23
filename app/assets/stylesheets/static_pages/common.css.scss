@@ -1,8 +1,10 @@
 $light-gray: #f2f2f2;
 $medium-gray: #ccc;
 $dark-gray: #343434;
-$logo-blue: #45c2c6;
+$logo-blue: #4bc1c3;
+$dark-blue: #e3e2db;
 $button-red: #ff3333;
+$threeb: #3b3b3b;
 
 // inheritable
 .light-gray-background {
@@ -20,6 +22,14 @@ $button-red: #ff3333;
 
 .red-background {
   background-color: $button-red;
+}
+
+.logo-blue-background {
+  background-color: $logo-blue;
+}
+
+.textured-background {
+  background: image-url('seamless_paper_texture.png');
 }
 
 .centered {
@@ -46,6 +56,29 @@ $button-red: #ff3333;
   font-weight: bold;
 }
 
+.no-padding {
+  padding:0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.row-spacer {
+  @extend .hidden-xs;
+  height:80px;
+}
+
 // static page defaults
 .static-pages {
   .row {
@@ -55,35 +88,23 @@ $button-red: #ff3333;
     }
   }
 
-  .jumbotron {
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    .img-responsive {
-      margin: 0 auto;
-    }
-  }
-
   article {
     header {
-      h1 {
-        font-size: 2em;
+      h1, h2, h3 {
         @extend .centered;
       }
-      h2 {
-        font-size: 1.5em;
-        @extend .centered;
-      }
-      h3 {
-        font-size: 1.3em;
-        @extend .centered;
-      }
+
     }
     p.centered {
       .img-responsive {
         margin: 0 auto;
       }
+    }
+    .row {
+      max-width: 1200px;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      margin: 0 auto !important;
     }
 
   }
@@ -96,5 +117,6 @@ $button-red: #ff3333;
       color: white;
     }
   }
+
 
 }

@@ -22,6 +22,8 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'activeadmin-mongoid', github: 'elia/activeadmin-mongoid', branch: 'rails4'
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'aws-sdk', '~> 1.3.4'
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'autoprefixer-rails'
 
 # Group Gems
 group :doc do

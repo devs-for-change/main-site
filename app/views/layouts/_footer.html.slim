@@ -1,0 +1,12 @@
+article.dark-gray-background
+  .row
+    footer.col-xs-12.site-footer
+      .col-xs-3.vcenter
+        = image_tag 'dfc-logo-globe-footer.png', class: 'img-responsive'
+      .col-xs-3.vcenter &copy; #{Date.today.year} Devs for Change
+      .col-xs-3.vcenter Email: #{ link_to 'info@devsforchange.org', 'mailto:info@devsforchange.org', target: :blank}
+      .col-xs-3.vcenter
+        .pull-right
+          =image_tag 'facebook-icon.png', class: 'inline social-icon'
+          =image_tag 'twitter-icon.png', class: 'inline social-icon'
+          =image_tag 'linkedin-icon.png', class: 'inline social-icon'

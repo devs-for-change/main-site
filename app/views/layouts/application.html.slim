@@ -8,4 +8,5 @@ html
       = render 'layouts/sub_nav'
       .container-fluid#main[class=('static-pages' if params[:controller] == 'pages')]
         = yield
+        = render 'layouts/footer'
       = render 'layouts/scripts'
