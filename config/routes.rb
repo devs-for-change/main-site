@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     get slug.to_sym, controller: :pages
   end
 
+  resources :contacts, only: [:create]
+
   root 'pages#index'
 end
