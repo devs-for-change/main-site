@@ -9,15 +9,17 @@
                 | Making a difference
                 br
                 | one website at a time
-    = render 'shared/down_anchor', target: '#about'
+          = render 'shared/down_anchor', target: '#about'
 
   article.textured-background#about
     .row-spacer
     .row
-      .col-sm-12
-        header
-          h1 About Us
-        p. We are a collective of trusted industry professionals donating our time to make your mission come to life online like never before. We will listen to your mission and guide you to a final product you can actually use—and be proud of. Basically, we run like a modern digital agency, except without the final bill.
+      .col-xs-12
+        .row
+          .col-xs-12
+            header
+              h1 About Us
+            p We are a collective of trusted industry professionals donating our time to make your mission come to life online like never before. We will listen to your mission and guide you to a final product you can actually use—and be proud of. Basically, we run like a modern digital agency, except without the final bill.
 
     .row-spacer
   article
@@ -29,7 +31,9 @@
             .col-sm-12
               header
                 h1 How We Work With You
-              p Devs for Change offers everything from full lifecycle development to a la carte design solutions. If you’re a nonprofit interested in learning more, feel free to drop us a line.
+              p Devs for Change offers everything from full lifecycle development to a la carte design
+                br
+                | solutions. If you’re a nonprofit interested in learning more, feel free to drop us a line.
           .row.process-icons
             .col-xs-12.col-md-4.col-md-offset-2
               header
