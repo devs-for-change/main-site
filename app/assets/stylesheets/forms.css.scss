@@ -1,0 +1,38 @@
+input, select, textarea {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5em;
+  padding: 14px;
+  border-radius: 3px;
+  border: none;
+  border-style: none;
+  color: #777;
+}
+
+.form-group {
+  margin-top: 40px;
+
+  label {
+    color: #4bc1c3;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+}
+
+.form-group.select {
+  .controls {
+    background: url('select_arrow.png') no-repeat right #fefefe;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}
+
+textarea {
+  height: 250px;
+}

@@ -9,12 +9,12 @@
     .row
       .col-sm-8.col-sm-offset-2
         = simple_form_for Contact.new, role: 'form' do |f|
-          = f.input :inquiry_type, collection: Contact::INQUIRY_TYPES
-          = f.input :name
-          = f.input :email
+          = f.input :inquiry_type, collection: Contact::INQUIRY_TYPES, prompt: 'Select', label: "I'm interested in ..."
+          = f.input :name, label: "First & Last Name"
+          = f.input :email, label: "Email Address"
           = f.input :company
           = f.input :role
           = f.input :website
-          = f.input :notes, as: :text
+          = f.input :notes, as: :text, label: "Additional Information"
           = f.submit 'Submit'
     .row-spacer
