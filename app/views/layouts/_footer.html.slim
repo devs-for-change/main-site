@@ -7,6 +7,6 @@ article.dark-gray-background
       .col-xs-3.vcenter Email: #{ link_to 'info@devsforchange.org', 'mailto:info@devsforchange.org', target: :blank}
       .col-xs-3.vcenter
         .pull-right
-          =image_tag 'facebook-icon.png', class: 'inline social-icon'
-          =image_tag 'twitter-icon.png', class: 'inline social-icon'
-          =image_tag 'linkedin-icon.png', class: 'inline social-icon'
+          <%= link_to image_tag("facebook-icon.png", :class => "inline social-icon", :alt => "Facebook"), "http://www.facebook.com/devsforchange", :target => "_blank" %>
+          <%= link_to image_tag("twitter-icon.png", :class => "inline social-icon", :alt => "Twitter"), "http://twitter.com/devsforchange", :target => "_blank" %>
+          <%= link_to image_tag("linkedin-icon.png", :class => "inline social-icon", :alt => "LinkedIn"), "https://www.linkedin.com/company/devs-for-change", :target => "_blank" %>
