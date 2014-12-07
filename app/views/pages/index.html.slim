@@ -1,5 +1,5 @@
 #index
-  article.dark-gray-background
+  article.dark-gray-background.no-padding
     .row.hero-background
       .col-sm-12.no-padding.vcenter
         .row.hero
@@ -12,7 +12,6 @@
           = render 'shared/down_anchor', target: '#about'
 
   article.textured-background#about
-    .row-spacer
     .row
       .col-xs-12
         .row
@@ -20,13 +19,12 @@
             header
               h1 About Us
             p We are a collective of trusted industry professionals donating our time to make your mission come to life online like never before. We will listen to your mission and guide you to a final product you can actually use—and be proud of. Basically, we run like a modern digital agency, except without the final bill.
-
-    .row-spacer
+            .centered
+              =link_to 'Contact Us', contact_path, class: 'btn default'
   article
-    .row-spacer
     .row
       .col-xs-12
-        article.process
+        article.process.no-padding
           .row
             .col-sm-12
               header
@@ -56,6 +54,5 @@
                 p.centered = image_tag 'process-launch-icon.png', class: 'img-responsive'
                 h2 Inspire
               p.centered Inspire giving through an improved user experience.
-  .row-spacer
 
   = render 'shared/lets_work_together'

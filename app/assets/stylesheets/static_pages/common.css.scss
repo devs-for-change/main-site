@@ -5,6 +5,9 @@ $logo-blue: #4bc1c3;
 $dark-blue: #e3e2db;
 $button-red: #ff3333;
 $threeb: #3b3b3b;
+$default-button-color: #f9f9f9;
+$default-button-background-color: $logo-blue;
+$default-button-background-hover-color: #3fabac;
 
 // inheritable
 .light-gray-background {
@@ -89,6 +92,8 @@ $threeb: #3b3b3b;
   }
 
   article {
+    padding-top: 80px;
+    padding-bottom: 80px;
     header {
       h1, h2, h3 {
         @extend .centered;

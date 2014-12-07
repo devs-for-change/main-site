@@ -1,0 +1,31 @@
+.btn {
+  margin-top: 38px;
+  margin-bottom: 0;
+  &.default {
+    font-size: 1.417em;
+    text-transform: uppercase;
+    background-color: $default-button-background-color;
+    color: $default-button-color;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    &:hover {
+      background-color: $default-button-background-hover-color;
+    }
+  }
+}
+
+a.big-button {
+  article {
+    background-color: $logo-blue;
+  }
+  &:hover {
+    article {
+      background-color: $default-button-background-hover-color;
+    }
+  }
+  color: $default-button-color !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em;
+}
