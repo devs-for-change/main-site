@@ -33,7 +33,7 @@
 
       overflow: hidden;
 
-      
+
       padding: 0;
       text-align: center;
       z-index: -1000;
@@ -43,7 +43,12 @@
       @extend .medium-gray-background;
     }
     .process-icons {
+      padding-top: 38px;
+      padding-bottom: 30px;
       font-size: .8em;
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
 
   }
