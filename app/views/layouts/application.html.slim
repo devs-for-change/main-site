@@ -6,7 +6,7 @@ html
     #site-wrapper
       = render 'layouts/menu'
       = render 'layouts/sub_nav'
-      .container-fluid#main[class=('static-pages' if params[:controller] == 'pages')]
+      .container-fluid#main[class='static-pages']
         = yield
         = render 'layouts/footer'
       = render 'layouts/scripts'

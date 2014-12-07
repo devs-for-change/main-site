@@ -8,7 +8,8 @@
         p This is some text introducing us as the Devs for Change team, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
     .row
       .col-sm-8.col-sm-offset-2
-        = simple_form_for Contact.new, role: 'form' do |f|
+        - @contact ||= Contact.new
+        = simple_form_for @contact, role: 'form' do |f|
           = f.input :inquiry_type, collection: Contact::INQUIRY_TYPES, prompt: 'Select', label: "I'm interested in ..."
           = f.input :name, label: "First & Last Name"
           = f.input :email, label: "Email Address"
@@ -16,5 +17,6 @@
           = f.input :role
           = f.input :website
           = f.input :notes, as: :text, label: "Additional Information"
-          = f.submit 'Submit'
+          .submit-form
+            = f.submit 'Submit'
     .row-spacer

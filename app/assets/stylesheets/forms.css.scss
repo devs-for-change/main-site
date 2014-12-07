@@ -19,6 +19,47 @@ input, select, textarea {
   }
 }
 
+.form-group.select.error {
+  .controls {
+    border: 1px solid #ff0000;
+
+  }
+}
+
+.form-group.error {
+  .controls {
+    input, textarea {
+      border: 1px solid #ff0000;
+    }
+  }
+}
+
+.form-group {
+  .errors {
+    color: #ff0000;
+    font-size: 14px;
+  }
+}
+
+.submit-form {
+  text-align: right;
+}
+
+input[type=submit] {
+  margin-top: 40px;
+  width: 40%;
+  border-radius: 10px;
+  background-color: #e65253;
+  font-size: 18px;
+  font-weigth: bold;
+  color: #f9f9f9;
+  text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+  background-color: #c64647;
+}
+
 select {
   -webkit-appearance: none;
   background: transparent;

@@ -13,4 +13,6 @@ class Contact
   field :role
   field :website
   field :notes
+
+  validates :inquiry_type, :name, :email, presence: true
 end
