@@ -15,4 +15,6 @@ class Contact
   field :notes
 
   validates :inquiry_type, :name, :email, presence: true
+
+  scope :recent, -> { order('created_at desc').limit(10) }
 end
