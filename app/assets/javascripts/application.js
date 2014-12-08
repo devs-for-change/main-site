@@ -15,3 +15,4 @@
 //
 //= require turbolinks
 //= require smooth-scroll
+//= require contact
