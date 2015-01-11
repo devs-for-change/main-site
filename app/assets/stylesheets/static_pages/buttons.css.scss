@@ -13,6 +13,17 @@
       background-color: $default-button-background-hover-color;
     }
   }
+  &.contact {
+    font-size: 18px;
+    padding: 14px;
+    width: 40%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    &:hover {
+      background-color: $default-button-background-hover-color;
+    }
+  }
 }
 
 a.big-button {
