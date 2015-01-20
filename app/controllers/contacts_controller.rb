@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
       flash[:success] = "You're inquiry has been successfully submitted."
       # Probably should take this off the main wire, but we have no
       #  worker concept implemented yet.  N.B.
-      ContactMailer.contact_form_entry(@contact)
+      ContactMailer.contact_form_entry(@contact).deliver
       redirect_to :root
     else
       render 'pages/contact'
