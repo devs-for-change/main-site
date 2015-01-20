@@ -5,7 +5,10 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save
       flash[:success] = "You're inquiry has been successfully submitted."
-      redirect_to '/contact'
+      # Probably should take this off the main wire, but we have no
+      #  worker concept implemented yet.  N.B.
+      ContactMailer.contact_form_entry(@contact)
+      redirect_to :root
     else
       render 'pages/contact'
     end

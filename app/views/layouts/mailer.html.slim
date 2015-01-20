@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible"
+         content="IE=edge"]
+    meta[name="viewport"
+         content="width=device-width, initial-scale=1"]
+    = stylesheet_link_tag 'maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', media: 'all'
+  body
+    h1
+      |[Production] A new contact form entry has arrived
+      =@contact.inquiry_type
+      |Details:
+
+    h2
+      |Name:&nbsp;
+      =@contact.name
+    h2
+      |Email:&nbsp;
+      =@contact.email
+    h2
+      |Company:&nbsp;
+      =@contact.company
+    h2
+      |Role:&nbsp;
+      =@contact.role
+    h2
+      |Website:&nbsp;
+      =link_to @contact.website, @contact.website
+    h2
+      |Notes:&nbsp;
+      =@contact.notes
+
+    | View in&nbsp;
+    = link_to 'admin', "/admin/contacts/#{@contact.id}"
