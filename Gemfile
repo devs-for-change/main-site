@@ -25,6 +25,7 @@ gem 'aws-sdk', '~> 1.3.4'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
 gem 'simple_form'
+gem 'mailgunner', '~> 1.3.0'
 
 # Group Gems
 group :doc do
