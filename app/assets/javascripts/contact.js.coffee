@@ -6,6 +6,7 @@ adjust_form_options = (inquiry_type) ->
     $('.contact_notes').hide()
     $('.contact_name').hide()
     $('.contact_email').hide()
+    $('#contact .submit-form').hide()
 
   if inquiry_type == 'Web services for my non-profit'
     $('.contact_company').show()
@@ -14,6 +15,7 @@ adjust_form_options = (inquiry_type) ->
     $('.contact_notes').show()
     $('.contact_name').show()
     $('.contact_email').show()
+    $('#contact .submit-form').show()
 
   if inquiry_type == 'Volunteering with Devs for Change'
     $('.contact_company').hide()
@@ -22,6 +24,7 @@ adjust_form_options = (inquiry_type) ->
     $('.contact_notes').hide()
     $('.contact_name').show()
     $('.contact_email').show()
+    $('#contact .submit-form').show()
 
 
   if inquiry_type == 'General Information'
@@ -31,6 +34,7 @@ adjust_form_options = (inquiry_type) ->
     $('.contact_notes').show()
     $('.contact_name').show()
     $('.contact_email').show()
+    $('#contact .submit-form').show()
 
 
 $ ->
