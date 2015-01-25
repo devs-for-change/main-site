@@ -10,13 +10,13 @@
       .col-sm-8.col-sm-offset-2
         - @contact ||= Contact.new
         = simple_form_for @contact, role: 'form' do |f|
-          = f.input :inquiry_type, collection: Contact::INQUIRY_TYPES, prompt: 'Select', label: "I'm interested in ..."
-          = f.input :name, label: "First & Last Name"
-          = f.input :email, label: "Email Address"
-          = f.input :company
-          = f.input :role
-          = f.input :website
-          = f.input :notes, as: :text, label: "Additional Information"
+          = f.input :inquiry_type, collection: Contact::INQUIRY_TYPES, prompt: 'Select', label: "I'm interested in ...", required: false
+          = f.input :name, label: "First & Last Name", required: false
+          = f.input :email, label: "Email Address", required: false
+          = f.input :company, required: false
+          = f.input :role, required: false
+          = f.input :website, required: false
+          = f.input :notes, as: :text, label: "Additional Information", required: false
           .submit-form
             = f.submit 'Submit'
     .row-spacer
