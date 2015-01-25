@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "general@devsforchange.org"
+  default from: "info@devsforchange.org"
   layout 'mailer'
 end
