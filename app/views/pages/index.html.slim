@@ -1,7 +1,7 @@
 #index
   article.dark-gray-background.no-padding
     .row.hero-background
-      .col-sm-12.no-padding.vcenter
+      .col-xs-12.no-padding.vcenter
         .row.hero
           .col-xs-12
             .hero-content
@@ -9,7 +9,7 @@
                 | Making a &nbsp;
                 br.visible-sm
                 | difference &nbsp;
-                br
+                br.visible-sm.hidden-xs
                 | one website &nbsp;
                 br.visible-sm
                 | at a time
@@ -24,7 +24,8 @@
               h1 About Us
             p We are a collective of trusted industry professionals donating our time to make your mission come to life online like never before. We will listen to your mission and guide you to a final product you can actually use—and be proud of. Basically, we run like a modern digital agency, except without the final bill.
             .centered
-              =link_to 'Contact Us', contact_path, class: 'btn default contact'
+              =link_to 'Contact Us', contact_path, class: 'btn default contact hidden-xs'
+              =link_to 'Contact Us', contact_path, class: 'btn btn-block contact default visible-xs-block'
   article
     .row
       .col-xs-12
