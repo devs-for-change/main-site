@@ -66,7 +66,7 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'www.devsforchange.org' }
   config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = { domain: 'app123example.mailgun.org' }
+  config.action_mailer.mailgun_settings = { domain: 'app28244480.mailgun.org' }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
