@@ -16,3 +16,8 @@
 @import 'static_pages/mobile_overrides';
 @import 'type';
 @import 'forms';
+
+// Temporarily hide while there's no menu.
+.navbar-toggle {
+  display: none;
+}
