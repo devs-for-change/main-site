@@ -55,7 +55,7 @@ Rails.application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   config.action_controller.asset_host = "//#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
-  config.assets.prefix = '/assets/production'
+  config.assets.prefix = "/assets/#{ENV['APP_ENVIRONMENT']}"
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
