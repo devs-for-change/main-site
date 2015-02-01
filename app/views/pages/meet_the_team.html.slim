@@ -32,7 +32,7 @@
     - for fact in fun_facts do
       .col-xs-12.col-sm-6.col-md-4.fun_fact
         .row
-          .col-xs-12.numbers
+          .col-xs-12.numbers.vcenter
             - if fact.left_number.present?
               = fact.left_number
 
@@ -42,7 +42,7 @@
               = fact.right_number
 
         .row
-          .col-sm-offset-1.col-xs-10.facts
+          .col-sm-12.facts
             p #{fact.text}
 
   = render 'shared/lets_work_together'
