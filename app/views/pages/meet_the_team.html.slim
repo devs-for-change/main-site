@@ -17,29 +17,6 @@
             .thumbnail
               = image_tag user.profile_image.url(:medium), class: 'img-responsive'
 
-  article.row.dark-gray-background
-    .col-xs-12
-      .row
-        .col-xs-12
-          header
-            h1 Lorem ipsum mattis cras
-          p.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-          p &nbsp;
-    .col-xs-12
-      .row
-        .col-xs-12
-          #carousel.carousel.slide[data-ride='carousel']
-            ol.carousel-indicators
-              li.active[data-target='#carousel' data-slide-to=0]
-            .carousel-inner
-              .item.active
-                .centered
-                  p
-                    = image_tag 'wireframe_no_img_80.png'
-                    span.ten 10
-                  p.lead.centered Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                  p &nbsp;
-
   article.row
     .col-xs-12
       .row
@@ -50,5 +27,22 @@
           p &nbsp;
         .col-xs-12
           = image_tag 'usa_map.png', class: 'img-responsive'
+
+  article.row#fun_facts
+    - for fact in fun_facts do
+      .col-xs-12.col-sm-6.col-md-4.fun_fact
+        .row
+          .col-xs-12.numbers.vcenter
+            - if fact.left_number.present?
+              = fact.left_number
+
+            = image_tag fact.fun_fact_image.url(:original), class: 'img-responsive'
+
+            - if fact.right_number.present?
+              = fact.right_number
+
+        .row
+          .col-sm-12.facts
+            p #{fact.text}
 
   = render 'shared/lets_work_together'

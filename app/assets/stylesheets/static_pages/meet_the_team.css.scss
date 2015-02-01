@@ -10,4 +10,31 @@
       line-height: 80px;
     }
   }
+
+  #fun_facts {
+    background-color: #209395;
+    color: #E5DFCE;
+    text-shadow: 4px 4px #226F6F;
+
+    .fun_fact {
+      height: 325px;
+    }
+
+    .numbers {
+      align: center;
+      font-size: 10.0em;
+    }
+
+    p {
+      align: center;
+      font-weight: bold;
+      font-size: 2.0em;
+    }
+
+    img {
+      margin-left: 5px;
+      margin-right: 5px;
+      display: inline;
+    }
+  }
 }

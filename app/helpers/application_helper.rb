@@ -21,6 +21,10 @@ module ApplicationHelper
     User.all
   end
 
+  def fun_facts
+    FunFacts.all
+  end
+
   def nav_class_for(nav_page)
     page == nav_page ? 'active' : ''
   end
