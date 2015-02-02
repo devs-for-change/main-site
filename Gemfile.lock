@@ -415,6 +415,7 @@ DEPENDENCIES
   mongoid
   mongoid-paperclip
   mongoid-rspec
+  multi_json (= 1.10.1)
   nokogiri
   pry
   rails (= 4.1.4)
