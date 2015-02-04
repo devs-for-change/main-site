@@ -1,5 +1,6 @@
 $light-gray: #f2f2f2;
 $medium-gray: #ccc;
+$hex-gray: #1f1e1e;
 $dark-gray: #343434;
 $logo-blue: #4bc1c3;
 $dark-blue: #e3e2db;
@@ -21,6 +22,10 @@ $default-button-background-hover-color: #3fabac;
 
 .medium-gray-background {
   background-color: $medium-gray;
+}
+
+.hex-gray-background {
+  background-color: $hex-gray;
 }
 
 .red-background {
