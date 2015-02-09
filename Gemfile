@@ -38,7 +38,6 @@ end
 
 group :development do
   gem 'guard-rspec', require: false
-  gem 'web-console', '~> 2.0'
 end
 
 group :test, :development do
