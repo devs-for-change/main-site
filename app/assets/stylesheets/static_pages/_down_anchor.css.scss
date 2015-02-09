@@ -1,32 +1,21 @@
 .static-pages {
   .down-anchor {
     position: absolute;
+
     bottom: 0px;
     // These are for centering.  From http://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
+
     background: image_url('down_anchor_circle.png');
+    font-size: 20px; // Bring font size up for "down arrow"
+    color: $gray;
 
     width: 60px;
     height: 30px;
 
-    a, a:hover {
-      right:10;
-      &:hover {
-        color: black;
-        text-decoration: none;
-      }
-      ing.down-anchor {
-        margin: 0 auto !important;
-      }
-    }
-    img {
-      padding-left: -5px;
-      width: 25px;
-      height: 10px;
-      
-    }
+
   }
 }
