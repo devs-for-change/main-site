@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.2.0'
 
 # Default Gems
 gem 'rails', '4.2.0'
@@ -14,12 +14,12 @@ gem 'rails_12factor'
 gem 'unicorn'
 
 # App Gems
-gem 'mongoid'
+gem 'mongoid', '4.0.1'
 gem 'devise'
 gem 'slim'
 gem 'nokogiri'
-gem 'activeadmin', github: 'activeadmin'
-gem 'activeadmin-mongoid', github: 'pencilcheck/activeadmin-mongoid', branch: 'patch-1'
+gem 'activeadmin', github: 'boie0025/activeadmin', branch: 'nb/rb-2.2-cleanup'
+gem 'activeadmin-mongoid', github: 'devs-for-change/activeadmin-mongoid', branch: 'master'
 
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'aws-sdk', '~> 1.3.4'
