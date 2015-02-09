@@ -10,7 +10,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 5.0'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 gem 'unicorn'
 
 # App Gems
@@ -30,7 +30,6 @@ gem 'mailgunner', '~> 1.3.0'
 gem 'asset_sync'
 gem "fog", "~>1.20", require: "fog/aws/storage"
 gem 'multi_json', '1.10.1'
-gem 'web-console', '~> 2.0'
 
 # Group Gems
 group :doc do
@@ -39,6 +38,7 @@ end
 
 group :development do
   gem 'guard-rspec', require: false
+  gem 'web-console', '~> 2.0'
 end
 
 group :test, :development do
