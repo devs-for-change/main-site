@@ -10,6 +10,6 @@ article.dark-gray-background.no-padding
           = link_to image_tag("facebook-icon.png", class: "inline social-icon", alt: "Facebook"), "http://www.facebook.com/devsforchange", target: "_blank"
           = link_to image_tag("twitter-icon.png", class: "inline social-icon", alt: "Twitter"), "http://twitter.com/devsforchange", target: "_blank"
           = link_to image_tag("linkedin-icon.png", class: "inline social-icon", alt: "LinkedIn"), "https://www.linkedin.com/company/devs-for-change", target: "_blank"
-.article.hex-gray-background.no-padding
-  .row
-    = render partial: "shared/up_anchor" if page.title == "Home"
+  .hex-gray-background.no-padding
+    .row
+      = render partial: "shared/up_anchor" if page.slug == "index"
