@@ -7,6 +7,21 @@ describe ApplicationHelper do
     end
   end
 
+  describe '#users' do
+    let!(:user1) { create(:user, email: 'blar@blar.com') }
+    let!(:user2) { create(:user, email: 'blar1@blar.com') }
+    it 'returns all users' do
+      expect(helper.users).to eq(User.all.to_a)
+    end
+  end
+
+  describe '#fun_facts' do
+    let!(:fun_facts) { create_list(:fun_fact, 2) }
+    it 'returns all fun facts' do
+      expect(helper.fun_facts).to eq(FunFacts.all.to_a)
+    end
+  end
+
   context 'with sub nav' do
     before do
       allow(helper).to receive(:page).and_return StaticPage.new(sub_nav_pages: ['index'])
