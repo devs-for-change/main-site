@@ -73,7 +73,7 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
-  config.include Devise::TestHelpers, type: [:controller, :feature]
+  config.include Devise::TestHelpers, type: [:controller, :feature, :request]
 
   config.include FactoryGirl::Syntax::Methods
 end
