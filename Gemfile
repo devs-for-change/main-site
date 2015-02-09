@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 # Default Gems
-gem 'rails', '4.1.4'
+gem 'rails', '4.2.0'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -19,7 +19,8 @@ gem 'devise'
 gem 'slim'
 gem 'nokogiri'
 gem 'activeadmin', github: 'activeadmin'
-gem 'activeadmin-mongoid', github: 'elia/activeadmin-mongoid', branch: 'rails4'
+gem 'activeadmin-mongoid', github: 'pencilcheck/activeadmin-mongoid', branch: 'patch-1'
+
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'aws-sdk', '~> 1.3.4'
 gem 'bootstrap-sass', '~> 3.3.1'
@@ -29,6 +30,7 @@ gem 'mailgunner', '~> 1.3.0'
 gem 'asset_sync'
 gem "fog", "~>1.20", require: "fog/aws/storage"
 gem 'multi_json', '1.10.1'
+gem 'web-console', '~> 2.0'
 
 # Group Gems
 group :doc do
