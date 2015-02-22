@@ -12,8 +12,8 @@ nav.navbar.navbar-inverse.navbar-static-top role="navigation"
 
       = link_to image_tag('dfc-logo-sml.png', class: 'img-responsive logo'), root_path, class: 'navbar-brand'
     / Temporarily disable nav. N.B.
-    / div#navbar-collapse.collapse.navbar-collapse.pull-right
-    /   ul.nav.navbar-nav
-    /     - static_pages.each do |page|
-    /       - unless page.hide_main_nav?
-    /         li = link_to page.title, page.slug, class: nav_class_for(page)
+    div#navbar-collapse.collapse.navbar-collapse.pull-right
+      ul.nav.navbar-nav
+        - static_pages.each do |page|
+          - unless page.hide_main_nav?
+            li = link_to page.title, page.slug, class: nav_class_for(page)
