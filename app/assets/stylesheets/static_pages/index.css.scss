@@ -17,7 +17,8 @@
           @media (max-width: $screen-md-min) {
             padding-top: 10vh;
             padding-right: 10px;
-            font-size: 4.44em;
+            font-size: 3.45em;
+            line-height: 1.25em;
           }
           font-family: 'Lato', sans-serif;
           color: $logo-blue;
@@ -31,10 +32,7 @@
       height: calc(100vh - 126px);
       text-transform: uppercase;
       max-width: none;
-
       overflow: hidden;
-
-
       padding: 0;
       text-align: center;
       z-index: -1000;
@@ -51,6 +49,6 @@
         padding-bottom: 0;
       }
     }
-
+    
   }
 }
