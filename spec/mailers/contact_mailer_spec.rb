@@ -10,7 +10,7 @@ RSpec.describe ContactMailer, :type => :mailer do
 
     it 'calls mail' do
       expect_any_instance_of(ContactMailer).to receive(:mail)
-      subject.deliver
+      subject.deliver_now
     end
   end
 end

@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.2.0'
 
 # Default Gems
-gem 'rails', '4.1.4'
+gem 'rails', '4.2.0'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -10,16 +10,17 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 5.0'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 gem 'unicorn'
 
 # App Gems
-gem 'mongoid'
+gem 'mongoid', '4.0.1'
 gem 'devise'
 gem 'slim'
 gem 'nokogiri'
-gem 'activeadmin', github: 'activeadmin'
-gem 'activeadmin-mongoid', github: 'elia/activeadmin-mongoid', branch: 'rails4'
+gem 'activeadmin', github: 'boie0025/activeadmin', branch: 'nb/rb-2.2-cleanup'
+gem 'activeadmin-mongoid', github: 'devs-for-change/activeadmin-mongoid', branch: 'master'
+
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'aws-sdk', '~> 1.3.4'
 gem 'bootstrap-sass', '~> 3.3.1'
