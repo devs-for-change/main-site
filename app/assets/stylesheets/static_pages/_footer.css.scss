@@ -16,7 +16,16 @@ footer.site-footer {
     }
   }
   img.social-icon {
-    max-height: 20%;
-    max-width: 20%;
+    //mobile
+    @media (max-width: $screen-xs-max) {
+      height: 34.5px;
+      width: 34.5px;
+    }
+    //tablet +
+    @media (min-width: $screen-sm-min) {
+      height: 45px;
+      width: 45px;
+    }
+
   }
 }
