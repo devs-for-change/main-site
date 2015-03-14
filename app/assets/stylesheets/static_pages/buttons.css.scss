@@ -40,6 +40,10 @@ a.big-button {
       background-color: $default-button-background-hover-color;
     }
   }
+
+  &:active {
+    text-decoration: none;
+  }
   color: $default-button-color !important;
   text-transform: uppercase;
   font-weight: 700;
