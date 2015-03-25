@@ -23,6 +23,7 @@ ActiveAdmin.register User do
       f.input :last_name
       f.input :email
       f.input :profile_image, as: :file, hint: f.template.image_tag(f.object.profile_image.url(:square))
+      f.input :hover_profile_image, as: :file, hint: f.template.image_tag(f.object.hover_profile_image.url(:square))
     end
     f.inputs "User Personal Information" do
       f.input :biography

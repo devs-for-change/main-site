@@ -2,6 +2,7 @@ class User
   include Mongoid::Document
   include Mongoid::Paperclip
   include UserDevise # See this concern file for devise related fields
+
   has_mongoid_attached_file :profile_image, styles: {
     thumb: '100x100>',
     square: '200x200#',
@@ -10,6 +11,16 @@ class User
 
   # Validate the attached image is image/jpg, image/png, etc
   validates_attachment_content_type :profile_image, content_type: /\Aimage\/.*\Z/, allow_blank: :true
+
+  has_mongoid_attached_file :hover_profile_image, styles: {
+    thumb: '100x100>',
+    square: '200x200#',
+    medium: '300x300>'
+  }
+
+  # Validate the attached image is image/jpg, image/png, etc
+  validates_attachment_content_type :hover_profile_image, content_type: /\Aimage\/.*\Z/, allow_blank: :true
+
 
   STRING_FIELDS = %i( first_name
       last_name
