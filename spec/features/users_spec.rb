@@ -19,6 +19,7 @@ feature 'user admin' do
     fill_in "Email", with: Faker::Internet.email
     fill_in "Password", with: "password"
     fill_in "Password confirmation", with: "password"
+    fill_in "Profile order", with: 1
     click_button "Create User"
     expect(page).to have_text("User was successfully created.")
   end

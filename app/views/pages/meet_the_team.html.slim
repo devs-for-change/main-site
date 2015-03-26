@@ -1,48 +1,19 @@
 #meet-the-team
   .jumbotron.relative
 
-    = image_tag 'wireframe_no_img_320.png'
-    = render 'shared/down_anchor', target: '#bios'
+    = image_tag 'team-image.jpg', class: 'img-responsive'
+    -#= render 'shared/down_anchor', target: '#bios'
 
-  article.row.light-gray-background#bios
+  article.row.textured-background
     .col-xs-12
       .row
         .col-xs-12
           header
-            h1 Bios ipsum dolor sit amet
-          p Consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-      .row
-        - for user in users do
-          .col-xs-4
-            .thumbnail
-              = image_tag user.profile_image.url(:medium), class: 'img-responsive'
+            h1 Meet the Team
+          p We are the Devs for Change team.
 
-  article.row
-    .col-xs-12
-      .row
-        .col-xs-12
-          header
-            h1 Where are Devs for Change?
-          p Consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-          p &nbsp;
-        .col-xs-12
-          = image_tag 'usa_map.png', class: 'img-responsive'
+  = render 'shared/all_team_members'
 
-  article.row#fun_facts
-    - for fact in fun_facts do
-      .col-xs-12.col-sm-6.col-md-4.fun_fact
-        .row
-          .col-xs-12.numbers.vcenter
-            - if fact.left_number.present?
-              = fact.left_number
-
-            = image_tag fact.fun_fact_image.url(:original), class: 'img-responsive'
-
-            - if fact.right_number.present?
-              = fact.right_number
-
-        .row
-          .col-sm-12.facts
-            p #{fact.text}
+  = render 'shared/fun_facts'
 
   = render 'shared/lets_work_together'

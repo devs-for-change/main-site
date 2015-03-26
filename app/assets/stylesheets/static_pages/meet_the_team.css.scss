@@ -9,6 +9,16 @@
       vertical-align: bottom;
       line-height: 80px;
     }
+
+    .jumbotron {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  #bios {
+    padding-top: 0;
+    padding-bottom: 80px;
   }
 
   #fun_facts {
@@ -22,13 +32,13 @@
 
     .numbers {
       align: center;
-      font-size: 10.0em;
+      font-size: 5vw;
     }
 
     p {
       align: center;
       font-weight: bold;
-      font-size: 2.0em;
+      font-size: 1.5vw;
     }
 
     img {
