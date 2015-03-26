@@ -18,7 +18,7 @@ module ApplicationHelper
   end
 
   def users
-    User.all
+    User.all.in_profile_order
   end
 
   def fun_facts

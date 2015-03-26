@@ -1,0 +1,8 @@
+article.row.textured-background#bios
+  .col-xs-6.col-xs-offset-3
+    .row.no-gutters
+      - for user in users do
+        - next if user.profile_image.blank?
+        .col-xs-4[id = user.slug]
+          .no-padding.no-margin
+            = image_tag user.profile_image.url(:medium), class: 'img-responsive no-margin no-padding full-width'

@@ -1,6 +1,6 @@
 ActiveAdmin.register User do
   before_filter :skip_sidebar!
-  permit_params :email, :password, :password_confirmation, :profile_image, *User::STRING_FIELDS
+  permit_params :email, :password, :password_confirmation, :profile_image, :profile_order, *User::STRING_FIELDS
 
   index do
     selectable_column
@@ -33,6 +33,7 @@ ActiveAdmin.register User do
       f.input :state_province
       f.input :country
       f.input :primary_phone
+      f.input :profile_order
     end
     f.inputs "User Authentication (Leave blank if unchanged)" do
       f.input :password

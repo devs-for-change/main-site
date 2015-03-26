@@ -87,6 +87,23 @@ $default-button-background-hover-color: #3fabac;
   height:80px;
 }
 
+.full-width {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+// No Gutters, from: http://julienmelissas.com/no-gutter-column-trick-for-bootstrap/
+
+.row.no-gutters {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
 // static page defaults
 .static-pages {
   .row {

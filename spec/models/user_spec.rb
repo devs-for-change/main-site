@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe User do
-  %i(first_name last_name email).each do |attr|
+  %i(first_name last_name email profile_order).each do |attr|
     it { should validate_presence_of(attr)}
   end
 
@@ -20,6 +20,16 @@ describe User do
     describe '.primary_key' do
       it 'returns id' do
         expect(subject.primary_key).to eq 'id'
+      end
+    end
+
+  end
+
+  describe 'instance methods' do
+    subject { create(:user) }
+    describe '.slug' do
+      it 'returns a url safe slug' do
+        expect(subject.slug).to eq("#{subject.first_name}-#{subject.last_name}".downcase)
       end
     end
   end

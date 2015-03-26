@@ -1,0 +1,16 @@
+article.row#fun_facts
+  - for fact in fun_facts do
+    .col-xs-12.col-sm-6.col-md-4.fun_fact
+      .row
+        .col-xs-12.numbers.vcenter
+          - if fact.left_number.present?
+            = fact.left_number
+
+          = image_tag fact.fun_fact_image.url(:original), class: 'img-responsive'
+
+          - if fact.right_number.present?
+            = fact.right_number
+
+      .row
+        .col-sm-12.facts
+          p #{fact.text}
