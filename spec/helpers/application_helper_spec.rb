@@ -11,7 +11,7 @@ describe ApplicationHelper do
     let!(:user1) { create(:user, email: 'blar@blar.com') }
     let!(:user2) { create(:user, email: 'blar1@blar.com') }
     it 'returns all users' do
-      expect(helper.users).to eq(User.all.to_a)
+      expect(helper.users.to_a).to include(*User.all.to_a)
     end
   end
 

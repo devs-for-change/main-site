@@ -2,9 +2,9 @@ class Contact
   include Mongoid::Document
   include Mongoid::Timestamps
 
-  INQUIRY_TYPES = ["Web services for my non-profit",
-                   "Volunteering with Devs for Change",
-                   "General Information"]
+  INQUIRY_TYPES = ["Services",
+                   "Volunteering",
+                   "General Info"]
 
   field :inquiry_type
   field :name

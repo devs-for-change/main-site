@@ -7,7 +7,7 @@ feature 'admin dashboard' do
   end
 
   it "accesses the dashboard" do
-    expect(page).to have_text(user.email)
+    expect(page).to have_text('Recent Contact Inquiries')
   end
 
 end
