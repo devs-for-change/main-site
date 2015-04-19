@@ -7,3 +7,4 @@
 user_profiles
 /public/users/*
 public/fun_facts
+.DS_Store
