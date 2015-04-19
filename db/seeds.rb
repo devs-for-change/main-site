@@ -67,73 +67,86 @@ users = [
     first_name: 'Nic',
     last_name: 'Boie',
     email: 'nic@devsforchange.org',
-    profile_order: 1
+    profile_order: 1,
+    title: 'Developer'
   },
   {
     first_name: 'JD',
     last_name: 'Guzman',
     email: 'jd@devsforchange.org',
-    profile_order: 0
+    profile_order: 0,
+    title: 'Developer'
   },
   {
     first_name: 'Bryant',
     last_name: 'Lippert',
     email: 'bryant@devsforchange.org',
-    profile_order: 0
+    profile_order: 0,
+    title: 'Developer'
   },
   {
     first_name: 'Richard',
     last_name: 'Hancock',
     email: 'richard@devsforchange.org',
-    profile_order: 0
+    profile_order: 0,
+    title: 'Developer'
   },
   {
     first_name: 'Brittany',
     last_name: 'Ledgerwood',
     email: 'brittany@devsforchange.org',
-    profile_order: 9
+    profile_order: 9,
+    title: 'Designer'
   },
   {
     first_name: 'Tony',
     last_name: 'Manning',
     email: 'tony@devsforchange.org',
-    profile_order: 5
+    profile_order: 5,
+    title: 'Project Manager'
   },
   {
     first_name: 'Haley',
     last_name: 'Luckeroth',
     email: 'haley@devsforchange.org',
-    profile_order: 3
+    profile_order: 3,
+    title: 'Information Architect'
   },
   {
     first_name: 'Katie',
     last_name: 'Nelson',
     email: 'katie@devsforchange.org',
-    profile_order: 4
+    profile_order: 4,
+    title: 'Project Manager'
   },
   {
     first_name: 'Angelene',
     last_name: 'Langeslay',
     email: 'angelene@devsforchange.org',
-    profile_order: 6
+    profile_order: 6,
+    title: 'Designer'
   },
   {
     first_name: 'Cindy',
     last_name: 'Schaller',
     email: 'cindy@devsforchange.org',
-    profile_order: 2
+    profile_order: 2,
+    title: 'Developer'
+
   },
   {
     first_name: 'Stuart',
     last_name: 'Loecker',
     email: 'stuart@devsforchange.org',
-    profile_order: 7
+    profile_order: 7,
+    title: 'Project Manager'
   },
   {
     first_name: 'Sarah',
     last_name: 'Bardwell',
     email: 'sarah@devsforchange.org',
-    profile_order: 8
+    profile_order: 8,
+    title: 'Marketing'
   }
 ].map do |user|
   common = {
@@ -149,7 +162,7 @@ users.each do |user|
   if (mongoid_user = User.where(email: user[:email]).first_or_initialize).new_record?
     mongoid_user.assign_attributes(user)
   else
-    mongoid_user.assign_attributes(profile_image: user[:profile_image], profile_order: user[:profile_order])
+    mongoid_user.assign_attributes(profile_image: user[:profile_image], profile_order: user[:profile_order], title: user[:title])
   end
   mongoid_user.save!
 end

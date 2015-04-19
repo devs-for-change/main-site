@@ -11,7 +11,11 @@ class User
       postal_code
       state_province
       country
-      primary_phone )
+      primary_phone
+      title
+      facebook_url
+      twitter_url
+      linkedin_url )
 
   STRING_FIELDS.each do |string_field|
     field string_field
@@ -47,6 +51,10 @@ class User
 
   def slug
     [first_name, last_name].join(?-).downcase
+  end
+
+  def name
+    [first_name, last_name].join(' ')
   end
 
   # Hack for latest mongoid to work with Devise

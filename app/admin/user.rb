@@ -21,6 +21,7 @@ ActiveAdmin.register User do
     f.inputs "User Basics" do
       f.input :first_name
       f.input :last_name
+      f.input :title
       f.input :email
       f.input :profile_image, as: :file, hint: f.template.image_tag(f.object.profile_image.url(:square))
       f.input :hover_profile_image, as: :file, hint: f.template.image_tag(f.object.hover_profile_image.url(:square))
@@ -38,6 +39,12 @@ ActiveAdmin.register User do
     f.inputs "User Authentication (Leave blank if unchanged)" do
       f.input :password
       f.input :password_confirmation
+    end
+
+    f.inputs "Social Media Links" do
+      f.input :facebook_url
+      f.input :twitter_url
+      f.input :linkedin_url
     end
 
     f.actions

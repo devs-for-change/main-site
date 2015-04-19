@@ -1,8 +1,39 @@
-article.row.textured-background#bios
-  .col-xs-6.col-xs-offset-3
-    .row.no-gutters
+article.row.textured-background
+  .col-md-12.visible-md.visible-lg
+    #bios
       - for user in users do
         - next if user.profile_image.blank?
-        .col-xs-4[id = user.slug]
+        .profile[id = user.slug]
           .no-padding.no-margin
-            = image_tag user.profile_image.url(:medium), class: 'img-responsive no-margin no-padding full-width'
+            = image_tag user.profile_image.url(:medium), class: 'no-margin no-padding full-width'
+          .name-plate
+            = user.name
+            br
+            = user.title
+            br
+            br
+            =link_to 'Read Bio', '#', class: 'bio-link'
+          .bio
+            .lead
+              = user.name
+              br
+              = user.title
+            p
+              | Arcu ornare himenaeos sagittis
+              | fermentum enim eu sit hac
+              | accumsan sem a id sapien
+              | porttitor nostra a nam neque
+              | odio.Parturient condimentum
+              | integer justo conubia venenatis
+              | dignissim mi vestibulum libero
+              | himenaeos magna proin
+              | phasellus odio aptent quis mus
+              | ridiculus condimentum
+              | scelerisque curae sed.Ultrices
+              | adipiscing at curae euismod
+              | ridiculus at a consectetur.
+            .centered.bio-social-media
+              = link_to image_tag("facebook-icon.png", class: "inline social-icon", alt: "Facebook"), user.facebook_url, target: "_blank" if user.facebook_url.present?
+              = link_to image_tag("twitter-icon.png", class: "inline social-icon", alt: "Twitter"), user.twitter_url, target: "_blank" if user.twitter_url.present?
+              = link_to image_tag("linkedin-icon.png", class: "inline social-icon", alt: "LinkedIn"), user.linkedin_url, target: "_blank" if user.linkedin_url.present?
+          - # for bio: position: absolute, display: none, top: 0, z-index: 100 change with show()

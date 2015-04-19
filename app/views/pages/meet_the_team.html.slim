@@ -3,15 +3,15 @@
 
     = image_tag 'team-image.jpg', class: 'img-responsive'
     -#= render 'shared/down_anchor', target: '#bios'
+    = render 'shared/down_anchor', target: '#bios'
 
-  article.row.textured-background
+  article.row.textured-background.no-bottom-padding
     .col-xs-12
       .row
         .col-xs-12
           header
             h1 Meet the Team
           p We are the Devs for Change team.
-
   = render 'shared/all_team_members'
 
   = render 'shared/fun_facts'

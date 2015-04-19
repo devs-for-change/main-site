@@ -19,6 +19,83 @@
   #bios {
     padding-top: 0;
     padding-bottom: 80px;
+    width: 756px;
+    margin: 0 auto;
+  }
+
+  // These are non-responsive.
+  #bios .profile {
+    float: left;
+    position: relative;
+    margin: 0 auto;
+    height: 400px;
+    width: 252px;
+    img {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  #bios .profile .name-plate {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    height: 33%;
+    background-color: transparentize($logo-blue, .10);
+    text-align: center;
+    padding-top: 1em;
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &.inactive {
+      color: $logo-blue;
+      background-color: $dark-gray;
+    }
+    a {
+      text-transform: none;
+      font-weight: normal;
+      font-family: 'Lato', arial;
+      font-size: 16px;
+    }
+  }
+
+  #bios .profile .bio {
+    position: absolute;
+    display: none;
+    top: 0;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    background-color: $dark-gray;
+    color: #fff;
+    .lead {
+      text-align: center;
+      padding-top: 1em;
+      font-weight: 900;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    p {
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 14px;
+    }
+
+  }
+
+  #bios .profile .bio .bio-social-media {
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 0 3px;
+    }
   }
 
   #fun_facts {

@@ -16,3 +16,4 @@
 //= require turbolinks
 //= require smooth-scroll
 //= require contact
+//= require meet_the_team
