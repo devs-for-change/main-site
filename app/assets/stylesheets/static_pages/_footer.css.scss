@@ -15,6 +15,11 @@ footer.site-footer {
       }
     }
   }
+
+  @media (max-width: $screen-xs-max) {
+    display: inherit !important;
+  }
+
   img.social-icon {
     //mobile
     @media (max-width: $screen-xs-max) {
