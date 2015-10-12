@@ -158,7 +158,7 @@ users = [
     email: 'sarah@devsforchange.org',
     profile_order: 8,
     title: 'Marketing',
-    biography: ''
+    biography: "I’ve been passionate about marketing since before I knew what the word for it was. After studying it in college, and then aside from a brief stint on sailing yachts, I have been working in marketing ever since. I’ve always found myself working for small companies and non-profits, helping to always create more with less, making gourmet projects from ramen-noodle budgets, and finding out-of-the-box solutions and ideas that are “so crazy they just might actually work”. I love sailing, teaching myself new things (most recently tiling), cooking, drinking wine, and discussing content marketing strategies. If I didn’t fall in love with marketing, I think I would be in politics...but aren’t they really the same thing?"
   }
 ].map do |user|
   common = {
