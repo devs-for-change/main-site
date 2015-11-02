@@ -1,5 +1,10 @@
 .static-pages {
   #meet-the-team {
+    .row {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
     .thumbnail {
       background: transparent;
       border: 0;
@@ -108,7 +113,7 @@
     }
 
     .numbers {
-      align: center;
+      text-align: center;
       font-size: 5vw;
     }
 
