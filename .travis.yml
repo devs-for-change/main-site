@@ -6,3 +6,5 @@ addons:
     repo_token: f511d014eca467c96ab0b049929fda56aeb882cd20d53a117013e399059f0c7d
 services:
   - mongodb
+before_install:
+  - export QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
