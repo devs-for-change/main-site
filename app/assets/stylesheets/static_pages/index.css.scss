@@ -1,54 +1,43 @@
-.static-pages {
-  #index {
-
-    .hero-background {
-      background: image-url("home-page-hero-01.jpg") no-repeat center;
-      margin: 0 auto;
-      overflow: hidden;
-      max-width: none;
-      padding: 0;
-      height: calc(100vh - 126px)
-    }
-
-    .hero {
-      .hero-content {
-        h1 {
-          padding-top: 30vh;
-          @media (max-width: $screen-md-min) {
-            padding-top: 10vh;
-            padding-right: 10px;
-            font-size: 3.45em;
-            line-height: 1.25em;
-          }
-          font-family: 'Lato', sans-serif;
-          color: $logo-blue;
-          max-width: 1200px;
-          margin: 0 auto;
-          font-size: 6.25em;
-          font-weight: 900;
-
-        }
-      }
-      height: calc(100vh - 126px);
+#index {
+  article#hero {
+    height: 70vh;
+    h1 {
       text-transform: uppercase;
-      max-width: none;
-      overflow: hidden;
-      padding: 0;
-      text-align: center;
-      z-index: -1000;
-    }
-
-    .process-header {
-      @extend .medium-gray-background;
-    }
-    .process-icons {
-      padding-top: 38px;
-      padding-bottom: 30px;
-      font-size: .8em;
-      &:last-child {
-        padding-bottom: 0;
+      span {
+        color: red;
       }
     }
-    
+  }
+
+  article#intro {
+    p {
+      padding-left: 1em;
+      border-left: 8px solid red;
+    }
+
+    margin-left: 15vw;
+    width: 70vw;
+
+  }
+
+  article#partners-and-services {
+    header {
+      h1 {
+        text-align: left;
+      }
+    }
+
+    .section-text {
+      p, h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      background-color: aqua;
+    }
+
+    .section-image {
+      padding-left: 0;
+    }
+
   }
 }

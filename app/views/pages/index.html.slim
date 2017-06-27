@@ -1,64 +1,30 @@
 #index
-  article.dark-gray-background.no-padding
-    .row.hero-background
-      .col-xs-12.no-padding.vcenter
-        .row.hero
-          .col-xs-12
-            .hero-content
-              h1.vcenter
-                | Making a &nbsp;
-                br.visible-sm
-                | difference &nbsp;
-                br.visible-sm.hidden-xs
-                | one website &nbsp;
-                br.visible-sm
-                | at a time
-          = render 'shared/down_anchor', target: '#about'
-
-  article.textured-background#about
-    .row
-      .col-xs-12
-        .row
-          .col-xs-12
-            header
-              h1 About Us
-            p We are a collective of trusted industry professionals donating our time to make your mission come to life online like never before. We will listen to your mission and guide you to a final product you can actually use—and be proud of. Basically, we run like a modern digital agency, except without the final bill.
-            .centered
-              =link_to 'Contact Us', contact_path, class: 'btn default contact hidden-xs'
-              =link_to 'Contact Us', contact_path, class: 'btn btn-block contact default visible-xs-block'
-  article
-    .row
-      .col-xs-12
-        article.process.no-padding
-          .row
-            .col-sm-12
-              header
-                h1 How We Work With You
-              p Devs for Change offers everything from full lifecycle development to a la carte design solutions. If you’re a nonprofit interested in learning more, feel free to drop us a line.
-          .row.process-icons
-            .col-xs-12.col-md-4.col-md-offset-2.process-definition
-              header
-                p.centered = image_tag 'process-colaborate-icon.png', class: 'img-responsive'
-                h2 Collaborate
-              p.centered We partner with nonprofits to understand their audience, goals, and challenges to develop a comprehensive digital strategy tailored to specific needs.
-            .col-xs-12.col-md-4.process-definition
-
-              header
-                p.centered = image_tag 'process-design-icon.png', class: 'img-responsive'
-                h2 Design
-              p.centered We work directly with nonprofits to create a user focused design. We want to share our passion for beautiful design with the community!
-          .row.process-icons
-            .col-xs-12.col-md-4.col-md-offset-2.process-definition
-              header
-                p.centered = image_tag 'process-build-icon.png', class: 'img-responsive'
-                h2 Develop
-
-              p.centered We incorporate design into a highly functional system that even non-technical users can maintain and evolve.
-            .col-xs-12.col-md-4.process-definition
-
-              header
-                p.centered = image_tag 'process-launch-icon.png', class: 'img-responsive'
-                h2 Launch & Maintain
-              p.centered We train nonprofit staff members to maintain their own content through a simple, user friendly content management system.
-
-  = render 'shared/lets_work_together'
+  article#hero
+    header
+      h1
+        ' Be the 
+        span change
+    section
+      p.center 
+        a[href='#intro']V
+  article#intro
+    section
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  article.row#partners-and-services.row-eq-height
+    section.section-text.col-xs-12.col-sm-6
+      header 
+        h1 Our partners & services
+      section
+        p We work with nonprofits and charitable organizations to deliver a full scale solution for their website needs
+    section.section-image.col-xs-12.col-sm-6
+      = image_tag 'devs-for-change-products-and-services.png', class: 'img-responsive'
+  article.row#partners-and-services.row-eq-height
+    section.section-image.col-xs-12.col-sm-6
+      = image_tag 'devs-for-change-products-and-services.png', class: 'img-responsive'
+    section.section-text.col-xs-12.col-sm-6
+      header 
+        h1 Our partners & services
+      section
+        p We work with nonprofits and charitable organizations to deliver a full scale solution for their website needs
+    
+      
