@@ -1,4 +1,10 @@
 #index {
+
+  .section-image {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   article#hero {
     height: 70vh;
     h1 {
@@ -6,6 +12,24 @@
       span {
         color: red;
       }
+    }
+  }
+
+  a.btn.btn-cta {
+    background-color: #6CBBAF;
+    border-bottom: 3px solid #57938B;
+    color: white;
+    padding: 2% 10%;
+
+    font-weight: bold;
+    &:hover {
+      background-color: lighten(#6CBBAF, 5%);
+      border-bottom: 2px solid lighten(#57938B, 5%);
+    }
+    &:active {
+      background-color: darken(#6CBBAF, 5%);
+      border-bottom: 2px solid darken(#57938B, 5%);
+      box-shadow: none;
     }
   }
 
@@ -20,24 +44,41 @@
 
   }
 
-  article#partners-and-services {
-    header {
-      h1 {
-        text-align: left;
+  #middle-section {
+    article {
+      header {
+        h1 {
+          color: white;
+          text-align: left;
+        }
+      }
+      section {
+        p {
+          color: white;
+        }
+      }
+      .section-text {
+        p, h1 {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+      }
+      padding: 0 !important;
+    }
+
+    #increase-impact {
+      .section-text {
+        background-color: #EBC54F;
       }
     }
 
-    .section-text {
-      p, h1 {
-        margin-left: 5%;
-        margin-right: 5%;
+    #partners-and-services {
+      .section-text {
+        background-color: $dfc-green;
       }
-      background-color: aqua;
-    }
 
-    .section-image {
-      padding-left: 0;
     }
-
   }
+
+
 }

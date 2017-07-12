@@ -5,26 +5,33 @@
         ' Be the 
         span change
     section
-      p.center 
+      p.centered 
         a[href='#intro']V
   article#intro
     section
       p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  article.row#partners-and-services.row-eq-height
-    section.section-text.col-xs-12.col-sm-6
-      header 
-        h1 Our partners & services
-      section
-        p We work with nonprofits and charitable organizations to deliver a full scale solution for their website needs
-    section.section-image.col-xs-12.col-sm-6
-      = image_tag 'devs-for-change-products-and-services.png', class: 'img-responsive'
-  article.row#partners-and-services.row-eq-height
-    section.section-image.col-xs-12.col-sm-6
-      = image_tag 'devs-for-change-products-and-services.png', class: 'img-responsive'
-    section.section-text.col-xs-12.col-sm-6
-      header 
-        h1 Our partners & services
-      section
-        p We work with nonprofits and charitable organizations to deliver a full scale solution for their website needs
+  
+
+  #middle-section
+    article.row#partners-and-services.row-eq-height
+      section.section-text.col-xs-12.col-sm-6
+        header 
+          h1.centered Our partners & services
+        section
+          p We work with nonprofits and charitable organizations to deliver a full scale solution for their website needs
+          p 
+            a[ href='#' class='btn btn-cta' ]Contact Us
+      section.section-image.col-xs-12.col-sm-6
+        = image_tag 'devs-for-change-products-and-services.png', class: 'img-responsive'
     
+    
+    article.row#increase-impact.row-eq-height
+      section.section-image.col-xs-12.col-sm-7
+        = image_tag 'devs-for-change-increase-impact.png', class: 'img-responsive'
+      section.section-text.col-xs-12.col-sm-5
+        header 
+          h1 Our partners & services
+        section
+          p We work with nonprofits and charitable organizations to deliver a full scale solution for their website needs
+      
       

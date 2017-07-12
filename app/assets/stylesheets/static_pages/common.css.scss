@@ -5,6 +5,7 @@ $dark-gray: #343434;
 $logo-blue: #4bc1c3;
 $dark-blue: #e3e2db;
 $button-red: #ff3333;
+$dfc-green: #89C8C0;
 $threeb: #3b3b3b;
 $default-button-color: #f9f9f9;
 $default-button-background-color: $logo-blue;
@@ -41,7 +42,7 @@ $default-button-background-hover-color: #3fabac;
 }
 
 .centered {
-  text-align: center;
+  text-align: center !important;
 }
 
 .navbar {
