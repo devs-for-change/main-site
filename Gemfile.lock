@@ -139,7 +139,7 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.6)
     excon (0.44.3)
-    execjs (2.3.0)
+    execjs (2.7.0)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.5.0)
@@ -443,9 +443,8 @@ GEM
       coffee-rails
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (2.5.3)
-      execjs (>= 0.3.0)
-      json (>= 1.8.0)
+    uglifier (4.1.18)
+      execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.6)
