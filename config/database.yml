@@ -5,6 +5,7 @@ default: &default
   password: password 
 
 production:
+  url: <%= ENV["DATABASE_URL"] %>
   adapter: postgresql
   encoding: utf8
   pool: 15
