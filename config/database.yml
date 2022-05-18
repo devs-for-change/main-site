@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  host: 127.0.0.1
+  username: application
+  password: password 
+
+development:
+  <<: *default
+  database: dfc_development
+test:
+  <<: *default
+  database: dfc_test

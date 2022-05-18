@@ -1,7 +1,7 @@
-class User
-  include Mongoid::Document
-  include Mongoid::Paperclip
-  include UserDevise # See this concern file for devise related fields
+class User < ActiveRecord::Base
+  #include Mongoid::Document
+  #include Mongoid::Paperclip
+  #include UserDevise # See this concern file for devise related fields
 
   STRING_FIELDS = %i( first_name
       last_name
@@ -17,31 +17,31 @@ class User
       twitter_url
       linkedin_url )
 
-  STRING_FIELDS.each do |string_field|
-    field string_field
-  end
+  #STRING_FIELDS.each do |string_field|
+    #field string_field
+  #end
 
-  field :profile_order
+  #field :profile_order
 
   scope :in_profile_order, -> { asc(:profile_order) }
 
-  has_mongoid_attached_file :profile_image, styles: {
-    thumb: '100x100>',
-    square: '200x200#',
-    medium: '300x300>'
-  }
+  #has_mongoid_attached_file :profile_image, styles: {
+    #thumb: '100x100>',
+    #square: '200x200#',
+    #medium: '300x300>'
+  #}
 
-  # Validate the attached image is image/jpg, image/png, etc
-  validates_attachment_content_type :profile_image, content_type: /\Aimage\/.*\Z/, allow_blank: :true
+  ## Validate the attached image is image/jpg, image/png, etc
+  #validates_attachment_content_type :profile_image, content_type: /\Aimage\/.*\Z/, allow_blank: :true
 
-  has_mongoid_attached_file :hover_profile_image, styles: {
-    thumb: '100x100>',
-    square: '200x200#',
-    medium: '300x300>'
-  }
+  #has_mongoid_attached_file :hover_profile_image, styles: {
+    #thumb: '100x100>',
+    #square: '200x200#',
+    #medium: '300x300>'
+  #}
 
-  # Validate the attached image is image/jpg, image/png, etc
-  validates_attachment_content_type :hover_profile_image, content_type: /\Aimage\/.*\Z/, allow_blank: :true
+  ## Validate the attached image is image/jpg, image/png, etc
+  #validates_attachment_content_type :hover_profile_image, content_type: /\Aimage\/.*\Z/, allow_blank: :true
 
   validates :password, :password_confirmation, presence: true, on: :create
   validates :password, :password_confirmation, presence: true, on: :update, allow_blank: :true

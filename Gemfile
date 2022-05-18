@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.2.0'
+ruby '2.5.7'
 
 # Default Gems
-gem 'rails', '4.2.0'
+gem 'rails', '~>4.2.0'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -12,16 +12,19 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'rails_12factor', group: :production
 gem 'unicorn'
+gem 'pg', '~> 0.15.0'
+gem 'bigdecimal', '~> 1.4.0'
+gem 'rake', '< 11.0'
 
 # App Gems
-gem 'mongoid', '4.0.1'
+#gem 'mongoid', '4.0.1'
 gem 'devise'
 gem 'slim'
 gem 'nokogiri'
-gem 'activeadmin', github: 'boie0025/activeadmin', branch: 'nb/rb-2.2-cleanup'
-gem 'activeadmin-mongoid', github: 'devs-for-change/activeadmin-mongoid', branch: 'master'
+gem 'activeadmin'
+#gem 'activeadmin-mongoid', github: 'devs-for-change/activeadmin-mongoid', branch: 'master'
 
-gem "mongoid-paperclip", :require => "mongoid_paperclip"
+#gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'aws-sdk', '~> 1.3.4'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
@@ -44,7 +47,7 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
-  gem 'mongoid-rspec'
+  #gem 'mongoid-rspec'
   gem 'thin'
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -59,6 +62,6 @@ end
 gem "codeclimate-test-reporter", group: :test, require: nil
 
 group :test do
-  gem 'capybara'
-  gem 'capybara-webkit'
+  #gem 'capybara'
+  #gem 'capybara-webkit'
 end
