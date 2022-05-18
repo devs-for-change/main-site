@@ -31,7 +31,7 @@ gem 'autoprefixer-rails'
 gem 'simple_form'
 gem 'mailgunner', '~> 1.3.0'
 #gem 'asset_sync'
-gem "fog", "~>1.20", require: "fog/aws/storage"
+#gem "fog", "~>1.20", require: "fog/aws/storage"
 gem 'multi_json', '1.10.1'
 
 # Group Gems
