@@ -12,7 +12,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'rails_12factor', group: :production
 gem 'unicorn'
-gem 'pg', '~> 0.15.0'
+gem 'activerecord-nulldb-adapter'
 gem 'bigdecimal', '~> 1.4.0'
 gem 'rake', '< 11.0'
 
